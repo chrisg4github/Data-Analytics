@@ -283,15 +283,15 @@ if Debug:
     Current tuple  (-90, 0)
     b = -90 c = 0
     Pass b, c to while loop...
-    271
+    281
     Current tuple  (0, 90)
     b = 0 c = 90
     Pass b, c to while loop...
-    546
+    556
     Current tuple  (90, 180)
     b = 90 c = 180
     Pass b, c to while loop...
-    559
+    567
     
 
 
@@ -320,8 +320,8 @@ print(len(city_wdf.index))
 city_wdf.head(10)
 ```
 
-    559
-    534
+    567
+    541
     
 
 
@@ -359,8 +359,8 @@ city_wdf.head(10)
   <tbody>
     <tr>
       <th>0</th>
-      <td>abu dhabi</td>
-      <td>ae</td>
+      <td>abeche</td>
+      <td>td</td>
       <td></td>
       <td>0.0</td>
       <td>0.0</td>
@@ -371,8 +371,8 @@ city_wdf.head(10)
     </tr>
     <tr>
       <th>1</th>
-      <td>acarau</td>
-      <td>br</td>
+      <td>abu samrah</td>
+      <td>qa</td>
       <td></td>
       <td>0.0</td>
       <td>0.0</td>
@@ -395,8 +395,8 @@ city_wdf.head(10)
     </tr>
     <tr>
       <th>3</th>
-      <td>aconibe</td>
-      <td>gq</td>
+      <td>adjumani</td>
+      <td>ug</td>
       <td></td>
       <td>0.0</td>
       <td>0.0</td>
@@ -407,8 +407,8 @@ city_wdf.head(10)
     </tr>
     <tr>
       <th>4</th>
-      <td>adeje</td>
-      <td>es</td>
+      <td>agadir</td>
+      <td>ma</td>
       <td></td>
       <td>0.0</td>
       <td>0.0</td>
@@ -419,8 +419,8 @@ city_wdf.head(10)
     </tr>
     <tr>
       <th>5</th>
-      <td>adrar</td>
-      <td>dz</td>
+      <td>aguimes</td>
+      <td>es</td>
       <td></td>
       <td>0.0</td>
       <td>0.0</td>
@@ -431,8 +431,8 @@ city_wdf.head(10)
     </tr>
     <tr>
       <th>6</th>
-      <td>afua</td>
-      <td>br</td>
+      <td>akdepe</td>
+      <td>tm</td>
       <td></td>
       <td>0.0</td>
       <td>0.0</td>
@@ -443,8 +443,8 @@ city_wdf.head(10)
     </tr>
     <tr>
       <th>7</th>
-      <td>alanya</td>
-      <td>tr</td>
+      <td>aksu</td>
+      <td>cn</td>
       <td></td>
       <td>0.0</td>
       <td>0.0</td>
@@ -455,8 +455,8 @@ city_wdf.head(10)
     </tr>
     <tr>
       <th>8</th>
-      <td>albany</td>
-      <td>au</td>
+      <td>alakurtti</td>
+      <td>ru</td>
       <td></td>
       <td>0.0</td>
       <td>0.0</td>
@@ -467,8 +467,8 @@ city_wdf.head(10)
     </tr>
     <tr>
       <th>9</th>
-      <td>albertville</td>
-      <td>us</td>
+      <td>albany</td>
+      <td>au</td>
       <td></td>
       <td>0.0</td>
       <td>0.0</td>
@@ -545,542 +545,549 @@ print("Total errors: ", error_count)
 city_wdf.head()
 ```
 
-    Row index: 0 | abu dhabi,ae -- query_url: http://api.openweathermap.org/data/2.5/weather?q=abu dhabi,ae&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 1 | acarau,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=acarau,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 0 | abeche,td -- query_url: http://api.openweathermap.org/data/2.5/weather?q=abeche,td&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 1 | abu samrah,qa -- query_url: http://api.openweathermap.org/data/2.5/weather?q=abu samrah,qa&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 2 | acari,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=acari,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 3 | aconibe,gq -- query_url: http://api.openweathermap.org/data/2.5/weather?q=aconibe,gq&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 4 | adeje,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=adeje,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 5 | adrar,dz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=adrar,dz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 6 | afua,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=afua,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 7 | alanya,tr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=alanya,tr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 8 | albany,au -- query_url: http://api.openweathermap.org/data/2.5/weather?q=albany,au&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 9 | albertville,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=albertville,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 10 | aleksandrovsk,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=aleksandrovsk,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 11 | alta floresta,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=alta floresta,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 12 | ambilobe,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ambilobe,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 13 | amderma,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=amderma,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 14 | ampanihy,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ampanihy,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 15 | anaco,ve -- query_url: http://api.openweathermap.org/data/2.5/weather?q=anaco,ve&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 16 | ancud,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ancud,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 17 | andevoranto,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=andevoranto,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 18 | angoche,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=angoche,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 19 | ankazoabo,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ankazoabo,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 20 | anloga,gh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=anloga,gh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 21 | antigonish,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=antigonish,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 22 | apele vii,ro -- query_url: http://api.openweathermap.org/data/2.5/weather?q=apele vii,ro&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 23 | aranos,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=aranos,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 24 | araouane,ml -- query_url: http://api.openweathermap.org/data/2.5/weather?q=araouane,ml&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 25 | arcachon,fr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=arcachon,fr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 26 | ardon,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ardon,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 27 | aripuana,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=aripuana,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 28 | arlit,ne -- query_url: http://api.openweathermap.org/data/2.5/weather?q=arlit,ne&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 29 | arraial do cabo,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=arraial do cabo,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 30 | ascension,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ascension,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 31 | asosa,et -- query_url: http://api.openweathermap.org/data/2.5/weather?q=asosa,et&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 32 | aswan,eg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=aswan,eg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 33 | atlantic city,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=atlantic city,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 34 | atocha,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=atocha,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 3 | adjumani,ug -- query_url: http://api.openweathermap.org/data/2.5/weather?q=adjumani,ug&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 4 | agadir,ma -- query_url: http://api.openweathermap.org/data/2.5/weather?q=agadir,ma&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 5 | aguimes,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=aguimes,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 6 | akdepe,tm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=akdepe,tm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 7 | aksu,cn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=aksu,cn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 8 | alakurtti,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=alakurtti,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 9 | albany,au -- query_url: http://api.openweathermap.org/data/2.5/weather?q=albany,au&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 10 | albert town,jm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=albert town,jm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 11 | alcaniz,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=alcaniz,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 12 | alenquer,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=alenquer,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 13 | alexandria,eg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=alexandria,eg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 14 | alpena,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=alpena,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 15 | alta floresta,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=alta floresta,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 16 | altay,cn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=altay,cn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 17 | alto araguaia,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=alto araguaia,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 18 | alvaraes,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=alvaraes,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 19 | amapa,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=amapa,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 20 | ambilobe,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ambilobe,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 21 | amderma,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=amderma,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 22 | ampanihy,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ampanihy,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 23 | ancud,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ancud,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 24 | andapa,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=andapa,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 25 | antofagasta,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=antofagasta,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 26 | anzio,it -- query_url: http://api.openweathermap.org/data/2.5/weather?q=anzio,it&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 27 | aquin,ht -- query_url: http://api.openweathermap.org/data/2.5/weather?q=aquin,ht&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 28 | araouane,ml -- query_url: http://api.openweathermap.org/data/2.5/weather?q=araouane,ml&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 29 | aripuana,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=aripuana,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 30 | arlit,ne -- query_url: http://api.openweathermap.org/data/2.5/weather?q=arlit,ne&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 31 | arraial do cabo,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=arraial do cabo,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 32 | artigas,uy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=artigas,uy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 33 | asmar,af -- query_url: http://api.openweathermap.org/data/2.5/weather?q=asmar,af&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 34 | atar,mr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=atar,mr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 35 | attawapiskat,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=attawapiskat,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 36 | axim,gh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=axim,gh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 37 | bajina basta,rs -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bajina basta,rs&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 38 | balfour,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=balfour,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 39 | bam,ir -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bam,ir&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 36 | avanigadda,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=avanigadda,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 37 | awbari,ly -- query_url: http://api.openweathermap.org/data/2.5/weather?q=awbari,ly&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 38 | axim,gh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=axim,gh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 39 | balkhash,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=balkhash,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 40 | bambous virieux,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bambous virieux,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 41 | bangangte,cm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bangangte,cm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 42 | barentsburg,sj -- query_url: http://api.openweathermap.org/data/2.5/weather?q=barentsburg,sj&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 41 | banda aceh,id -- query_url: http://api.openweathermap.org/data/2.5/weather?q=banda aceh,id&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 42 | bara,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bara,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 43 | barbar,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=barbar,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 44 | barcelos,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=barcelos,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 45 | bareli,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bareli,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 46 | barentsburg,sj -- query_url: http://api.openweathermap.org/data/2.5/weather?q=barentsburg,sj&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     The key doesn't exist: barentsburg, sj.
     <class 'KeyError'>
-    Row index: 43 | barranca,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=barranca,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 44 | bathsheba,bb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bathsheba,bb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 45 | beira,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=beira,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 46 | beirut,lb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=beirut,lb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 47 | belmonte,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=belmonte,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 48 | beloha,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=beloha,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 49 | belushya guba,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=belushya guba,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 50 | bengkulu,id -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bengkulu,id&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 51 | benguela,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=benguela,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 52 | berdychiv,ua -- query_url: http://api.openweathermap.org/data/2.5/weather?q=berdychiv,ua&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 53 | berlevag,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=berlevag,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 54 | bhag,pk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bhag,pk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 55 | bibiani,gh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bibiani,gh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 56 | bid,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bid,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 57 | bilma,ne -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bilma,ne&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 58 | boa vista,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=boa vista,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 59 | boca do acre,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=boca do acre,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 60 | bodden town,ky -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bodden town,ky&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 61 | bolgatanga,gh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bolgatanga,gh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 62 | bolungarvik,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bolungarvik,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 63 | bom jesus do galho,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bom jesus do galho,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 64 | bonavista,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bonavista,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 65 | bosobolo,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bosobolo,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 66 | bowling green,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bowling green,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 67 | brae,gb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=brae,gb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 68 | brasilia,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=brasilia,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 69 | bredasdorp,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bredasdorp,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 70 | bronnoysund,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bronnoysund,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 71 | bubaque,gw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bubaque,gw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 72 | buchanan,lr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=buchanan,lr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 73 | bud,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bud,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 74 | bur gabo,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bur gabo,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 75 | burica,pa -- query_url: http://api.openweathermap.org/data/2.5/weather?q=burica,pa&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 76 | busselton,au -- query_url: http://api.openweathermap.org/data/2.5/weather?q=busselton,au&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 77 | butembo,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=butembo,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 78 | buzmeyin,tm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=buzmeyin,tm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 79 | cabimas,ve -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cabimas,ve&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 80 | calamar,co -- query_url: http://api.openweathermap.org/data/2.5/weather?q=calamar,co&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 81 | calvinia,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=calvinia,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 82 | camabatela,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=camabatela,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 83 | camana,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=camana,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 84 | camocim,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=camocim,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 85 | cap malheureux,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cap malheureux,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 86 | cape town,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cape town,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 87 | caravelas,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=caravelas,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 88 | carnarvon,au -- query_url: http://api.openweathermap.org/data/2.5/weather?q=carnarvon,au&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 89 | carnot,cf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=carnot,cf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 90 | carutapera,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=carutapera,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 91 | castro,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=castro,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 92 | cayenne,gf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cayenne,gf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 93 | centralia,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=centralia,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 94 | chake chake,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chake chake,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 95 | chapais,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chapais,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 96 | chicama,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chicama,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 97 | chimore,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chimore,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 98 | chinsali,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chinsali,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 99 | chipinge,zw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chipinge,zw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 100 | chokwe,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chokwe,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 101 | chulym,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chulym,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 102 | chuy,uy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chuy,uy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 103 | cidreira,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cidreira,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 104 | clarence town,bs -- query_url: http://api.openweathermap.org/data/2.5/weather?q=clarence town,bs&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 105 | clinton,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=clinton,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 106 | clonakilty,ie -- query_url: http://api.openweathermap.org/data/2.5/weather?q=clonakilty,ie&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 107 | clyde river,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=clyde river,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 108 | cockburn town,bs -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cockburn town,bs&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 109 | codrington,ag -- query_url: http://api.openweathermap.org/data/2.5/weather?q=codrington,ag&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 110 | coihaique,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=coihaique,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 111 | colesberg,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=colesberg,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 112 | comodoro rivadavia,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=comodoro rivadavia,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 113 | conceicao do araguaia,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=conceicao do araguaia,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 114 | conde,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=conde,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 115 | constitucion,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=constitucion,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 116 | coquimbo,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=coquimbo,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 117 | de aar,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=de aar,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 118 | diamantino,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=diamantino,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 119 | dikson,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dikson,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 120 | dingle,ie -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dingle,ie&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 121 | dinsor,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dinsor,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 122 | ditrau,ro -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ditrau,ro&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 123 | dnestrovsc,md -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dnestrovsc,md&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 124 | dodoma,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dodoma,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 125 | dourados,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dourados,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 126 | durban,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=durban,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 127 | dzilam gonzalez,mx -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dzilam gonzalez,mx&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 128 | east london,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=east london,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 129 | eenhana,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=eenhana,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 130 | el alto,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=el alto,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 131 | eyl,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=eyl,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 132 | faya,td -- query_url: http://api.openweathermap.org/data/2.5/weather?q=faya,td&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 133 | ferme-neuve,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ferme-neuve,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 134 | fomboni,km -- query_url: http://api.openweathermap.org/data/2.5/weather?q=fomboni,km&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 135 | formoso do araguaia,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=formoso do araguaia,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 136 | gainesville,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gainesville,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 137 | galgani,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=galgani,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 138 | gallipoli,it -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gallipoli,it&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 139 | gamba,ga -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gamba,ga&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 140 | gemena,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gemena,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 141 | general roca,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=general roca,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 142 | georgetown,sh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=georgetown,sh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 143 | georgiyevka,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=georgiyevka,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 144 | glasgow,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=glasgow,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 145 | gopalganj,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gopalganj,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 146 | grand river south east,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=grand river south east,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 147 | grand-santi,gf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=grand-santi,gf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 148 | gravdal,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gravdal,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 149 | halden,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=halden,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 150 | hambantota,lk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hambantota,lk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 151 | hamilton,bm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hamilton,bm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 152 | harper,lr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=harper,lr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 153 | havoysund,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=havoysund,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 154 | havre-saint-pierre,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=havre-saint-pierre,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 155 | henties bay,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=henties bay,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 156 | herat,af -- query_url: http://api.openweathermap.org/data/2.5/weather?q=herat,af&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 157 | hermanus,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hermanus,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 158 | hithadhoo,mv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hithadhoo,mv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 159 | hobyo,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hobyo,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 160 | hofn,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hofn,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 161 | honningsvag,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=honningsvag,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 162 | hoopstad,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hoopstad,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 163 | houlton,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=houlton,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 164 | hualmay,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hualmay,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 165 | husavik,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=husavik,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 166 | iberia,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=iberia,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 167 | igarape-miri,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=igarape-miri,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 168 | igarka,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=igarka,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 169 | ilhabela,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ilhabela,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 170 | illoqqortoormiut,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=illoqqortoormiut,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 171 | ilo,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ilo,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 172 | ilulissat,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ilulissat,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 173 | imbituba,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=imbituba,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 174 | indiaroba,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=indiaroba,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 175 | ipojuca,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ipojuca,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 176 | iqaluit,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=iqaluit,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 177 | iquique,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=iquique,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 178 | iquitos,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=iquitos,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 179 | iracoubo,gf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=iracoubo,gf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 180 | irbil,iq -- query_url: http://api.openweathermap.org/data/2.5/weather?q=irbil,iq&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 181 | itacare,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=itacare,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 182 | itagiba,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=itagiba,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 183 | jacareacanga,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=jacareacanga,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 184 | jaguarao,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=jaguarao,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 185 | jalingo,ng -- query_url: http://api.openweathermap.org/data/2.5/weather?q=jalingo,ng&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 186 | jamestown,sh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=jamestown,sh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 187 | jarjis,tn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=jarjis,tn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 188 | jiddah,sa -- query_url: http://api.openweathermap.org/data/2.5/weather?q=jiddah,sa&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 189 | juripiranga,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=juripiranga,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 190 | jutai,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=jutai,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 191 | kalengwa,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kalengwa,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 192 | kalmunai,lk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kalmunai,lk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 193 | kapiri mposhi,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kapiri mposhi,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 194 | karasjok,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=karasjok,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 195 | karauzyak,uz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=karauzyak,uz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 196 | kargasok,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kargasok,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 197 | kargil,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kargil,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 198 | karpogory,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=karpogory,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 199 | kasamwa,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kasamwa,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 200 | kashi,cn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kashi,cn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 201 | kathu,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kathu,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 202 | kavaratti,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kavaratti,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 203 | kazalinsk,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kazalinsk,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 204 | kerchevskiy,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kerchevskiy,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 205 | khalkhal,ir -- query_url: http://api.openweathermap.org/data/2.5/weather?q=khalkhal,ir&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 206 | kharan,pk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kharan,pk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 207 | khormuj,ir -- query_url: http://api.openweathermap.org/data/2.5/weather?q=khormuj,ir&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 208 | khudumelapye,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=khudumelapye,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 209 | kidal,ml -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kidal,ml&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 210 | kilindoni,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kilindoni,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 211 | kisangani,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kisangani,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 212 | klaksvik,fo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=klaksvik,fo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 213 | kontagora,ng -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kontagora,ng&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 214 | korla,cn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=korla,cn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 215 | kosonsoy,uz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kosonsoy,uz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 216 | kralendijk,an -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kralendijk,an&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 217 | krasnoselkup,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=krasnoselkup,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 218 | krasnovishersk,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=krasnovishersk,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 219 | kruisfontein,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kruisfontein,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 220 | kutum,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kutum,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 221 | la oroya,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=la oroya,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 222 | la palma,pa -- query_url: http://api.openweathermap.org/data/2.5/weather?q=la palma,pa&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 223 | la romana,do -- query_url: http://api.openweathermap.org/data/2.5/weather?q=la romana,do&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 224 | lagoa,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lagoa,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 225 | laguna,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=laguna,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 226 | lagunas,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lagunas,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 227 | lamu,ke -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lamu,ke&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 228 | lar gerd,af -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lar gerd,af&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 229 | lasa,cn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lasa,cn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 230 | laukaa,fi -- query_url: http://api.openweathermap.org/data/2.5/weather?q=laukaa,fi&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 231 | lebu,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lebu,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 232 | leh,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=leh,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 233 | lekoni,ga -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lekoni,ga&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 234 | leningradskiy,tj -- query_url: http://api.openweathermap.org/data/2.5/weather?q=leningradskiy,tj&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 235 | leo,bf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=leo,bf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 236 | ler,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ler,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 237 | lerwick,gb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lerwick,gb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 238 | litomerice,cz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=litomerice,cz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 239 | livingstonia,mw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=livingstonia,mw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 240 | llallagua,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=llallagua,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 241 | lodja,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lodja,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 242 | longyearbyen,sj -- query_url: http://api.openweathermap.org/data/2.5/weather?q=longyearbyen,sj&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 243 | los llanos de aridane,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=los llanos de aridane,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 244 | louisbourg,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=louisbourg,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 245 | luanda,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=luanda,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 246 | lucapa,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lucapa,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 247 | luderitz,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=luderitz,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 248 | luwingu,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=luwingu,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 249 | lyantonde,ug -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lyantonde,ug&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 250 | maceio,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=maceio,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 251 | madaoua,ne -- query_url: http://api.openweathermap.org/data/2.5/weather?q=madaoua,ne&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 252 | mahebourg,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mahebourg,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 253 | makat,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=makat,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 254 | malanje,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=malanje,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 255 | malatya,tr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=malatya,tr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 256 | manavalakurichi,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manavalakurichi,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 257 | mancio lima,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mancio lima,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 258 | mandera,ke -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mandera,ke&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 259 | manica,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manica,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 260 | manicore,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manicore,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 261 | maniitsoq,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=maniitsoq,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 262 | manono,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manono,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 263 | mar del plata,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mar del plata,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 264 | maraa,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=maraa,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 265 | maragogi,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=maragogi,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 266 | marathon,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=marathon,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 267 | marcona,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=marcona,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 268 | margate,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=margate,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 269 | mariakani,ke -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mariakani,ke&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 270 | marion,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=marion,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 271 | marsa matruh,eg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=marsa matruh,eg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 272 | marystown,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=marystown,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 273 | matara,lk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=matara,lk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 274 | mathathane,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mathathane,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 275 | maues,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=maues,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 276 | mayahi,ne -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mayahi,ne&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 277 | mayumba,ga -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mayumba,ga&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 278 | mbala,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mbala,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 279 | mehamn,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mehamn,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 280 | meulaboh,id -- query_url: http://api.openweathermap.org/data/2.5/weather?q=meulaboh,id&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 281 | middletown,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=middletown,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 282 | milford,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=milford,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 283 | mitsamiouli,km -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mitsamiouli,km&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 284 | mmabatho,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mmabatho,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 285 | mocambique,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mocambique,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 286 | mogadishu,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mogadishu,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 287 | monrovia,lr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=monrovia,lr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 288 | moose factory,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=moose factory,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 289 | morondava,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=morondava,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 290 | mossoro,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mossoro,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 291 | moyale,ke -- query_url: http://api.openweathermap.org/data/2.5/weather?q=moyale,ke&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 292 | mpika,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mpika,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 293 | mponela,mw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mponela,mw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 294 | mtambile,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mtambile,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 295 | mufulira,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mufulira,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 296 | muros,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=muros,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 297 | mwinilunga,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mwinilunga,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 298 | nador,ma -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nador,ma&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 299 | nalut,ly -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nalut,ly&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 300 | namibe,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=namibe,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 301 | namikupa,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=namikupa,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 302 | nanortalik,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nanortalik,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 303 | nara,ml -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nara,ml&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 304 | narsaq,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=narsaq,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 305 | naryan-mar,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=naryan-mar,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 306 | nassau,bs -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nassau,bs&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 307 | natal,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=natal,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 308 | ndola,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ndola,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 309 | necochea,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=necochea,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 310 | neuquen,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=neuquen,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 311 | nkhata bay,mw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nkhata bay,mw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 312 | nohar,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nohar,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 313 | north bay,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=north bay,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 314 | nouadhibou,mr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nouadhibou,mr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 315 | nove straseci,cz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nove straseci,cz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 316 | nsanje,mw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nsanje,mw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 317 | nurota,uz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nurota,uz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 318 | nuuk,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nuuk,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 319 | nyagan,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nyagan,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 320 | nyakahanga,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nyakahanga,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 321 | obidos,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=obidos,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 322 | of,tr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=of,tr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 323 | ofaqim,il -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ofaqim,il&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 324 | oktyabrskoye,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=oktyabrskoye,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 325 | olafsvik,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=olafsvik,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 326 | omidiyeh,ir -- query_url: http://api.openweathermap.org/data/2.5/weather?q=omidiyeh,ir&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 327 | ondjiva,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ondjiva,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 328 | opuwo,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=opuwo,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 329 | oranjestad,aw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=oranjestad,aw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 330 | ordynskoye,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ordynskoye,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 331 | oriximina,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=oriximina,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 332 | ostrovnoy,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ostrovnoy,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 333 | oum hadjer,td -- query_url: http://api.openweathermap.org/data/2.5/weather?q=oum hadjer,td&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 334 | paamiut,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=paamiut,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 335 | paidha,ug -- query_url: http://api.openweathermap.org/data/2.5/weather?q=paidha,ug&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 336 | paita,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=paita,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 337 | panaba,mx -- query_url: http://api.openweathermap.org/data/2.5/weather?q=panaba,mx&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 338 | panama city,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=panama city,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 339 | pangnirtung,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pangnirtung,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 340 | pangoa,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pangoa,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 341 | panguipulli,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=panguipulli,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 342 | paradwip,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=paradwip,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 343 | paragominas,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=paragominas,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 344 | paramonga,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=paramonga,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 345 | parana,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=parana,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 346 | parauna,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=parauna,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 347 | parrita,cr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=parrita,cr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 348 | parrsboro,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=parrsboro,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 349 | patos de minas,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=patos de minas,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 350 | paucartambo,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=paucartambo,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 351 | pedro ii,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pedro ii,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 352 | peniche,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=peniche,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 353 | piacabucu,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=piacabucu,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 354 | pimentel,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pimentel,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 355 | pirenopolis,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pirenopolis,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 356 | pisco,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pisco,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 357 | pitimbu,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pitimbu,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 358 | plettenberg bay,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=plettenberg bay,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 359 | pokhara,np -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pokhara,np&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 360 | ponta delgada,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ponta delgada,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 361 | ponta do sol,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ponta do sol,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 362 | ponta do sol,cv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ponta do sol,cv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 363 | porecatu,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=porecatu,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 364 | port alfred,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=port alfred,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 365 | port elizabeth,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=port elizabeth,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 366 | port elizabeth,vc -- query_url: http://api.openweathermap.org/data/2.5/weather?q=port elizabeth,vc&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 367 | port shepstone,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=port shepstone,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 368 | porto novo,cv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=porto novo,cv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 369 | porto velho,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=porto velho,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 370 | praia da vitoria,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=praia da vitoria,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 371 | presidencia roque saenz pena,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=presidencia roque saenz pena,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 372 | presidente epitacio,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=presidente epitacio,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 373 | presque isle,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=presque isle,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 374 | puerto del rosario,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=puerto del rosario,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 375 | puerto narino,co -- query_url: http://api.openweathermap.org/data/2.5/weather?q=puerto narino,co&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 376 | puerto pinasco,py -- query_url: http://api.openweathermap.org/data/2.5/weather?q=puerto pinasco,py&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 47 | bargal,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bargal,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 48 | barra,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=barra,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 49 | barra dos coqueiros,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=barra dos coqueiros,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 50 | batangafo,cf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=batangafo,cf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 51 | bathsheba,bb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bathsheba,bb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 52 | beberibe,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=beberibe,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 53 | beitbridge,zw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=beitbridge,zw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 54 | belmonte,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=belmonte,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 55 | beloha,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=beloha,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 56 | belousovka,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=belousovka,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 57 | belushya guba,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=belushya guba,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 58 | bengkulu,id -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bengkulu,id&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 59 | bereda,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bereda,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 60 | berezna,ua -- query_url: http://api.openweathermap.org/data/2.5/weather?q=berezna,ua&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 61 | berlevag,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=berlevag,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 62 | beyneu,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=beyneu,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 63 | bilma,ne -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bilma,ne&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 64 | biograd na moru,hr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=biograd na moru,hr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 65 | birao,cf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=birao,cf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 66 | biu,ng -- query_url: http://api.openweathermap.org/data/2.5/weather?q=biu,ng&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 67 | blagoyevo,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=blagoyevo,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 68 | bloemfontein,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bloemfontein,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 69 | boali,cf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=boali,cf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 70 | boende,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=boende,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 71 | bokspits,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bokspits,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 72 | bolama,gw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bolama,gw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 73 | bolshegrivskoye,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bolshegrivskoye,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 74 | bolungarvik,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bolungarvik,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 75 | bonavista,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bonavista,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 76 | botro,ci -- query_url: http://api.openweathermap.org/data/2.5/weather?q=botro,ci&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 77 | bouar,cf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bouar,cf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 78 | boueni,yt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=boueni,yt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 79 | bourbonnais,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bourbonnais,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 80 | bousse,bf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bousse,bf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 81 | braniewo,pl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=braniewo,pl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 82 | bredasdorp,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bredasdorp,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 83 | bubaque,gw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bubaque,gw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 84 | bud,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bud,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 85 | bur gabo,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=bur gabo,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 86 | burgersdorp,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=burgersdorp,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 87 | buritis,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=buritis,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 88 | busselton,au -- query_url: http://api.openweathermap.org/data/2.5/weather?q=busselton,au&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 89 | butterworth,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=butterworth,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 90 | cabedelo,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cabedelo,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 91 | caico,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=caico,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 92 | camacupa,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=camacupa,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 93 | camopi,gf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=camopi,gf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 94 | campoverde,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=campoverde,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 95 | canete,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=canete,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 96 | cantanhede,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cantanhede,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 97 | cape town,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cape town,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 98 | carauari,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=carauari,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 99 | caravelas,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=caravelas,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 100 | carnarvon,au -- query_url: http://api.openweathermap.org/data/2.5/weather?q=carnarvon,au&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 101 | casablanca,ma -- query_url: http://api.openweathermap.org/data/2.5/weather?q=casablanca,ma&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 102 | castro,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=castro,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 103 | catamarca,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=catamarca,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 104 | cayenne,gf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cayenne,gf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 105 | celendin,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=celendin,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 106 | cestas,fr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cestas,fr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 107 | chakia,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chakia,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 108 | chala,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chala,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 109 | chapais,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chapais,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 110 | chicama,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chicama,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 111 | chililabombwe,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chililabombwe,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 112 | chiredzi,zw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chiredzi,zw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 113 | chlorakas,cy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chlorakas,cy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 114 | chuy,uy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=chuy,uy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 115 | cidreira,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cidreira,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 116 | ciudad bolivar,ve -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ciudad bolivar,ve&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 117 | clonakilty,ie -- query_url: http://api.openweathermap.org/data/2.5/weather?q=clonakilty,ie&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 118 | clyde river,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=clyde river,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 119 | coari,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=coari,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 120 | codrington,ag -- query_url: http://api.openweathermap.org/data/2.5/weather?q=codrington,ag&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 121 | coihaique,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=coihaique,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 122 | colares,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=colares,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 123 | conceicao do araguaia,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=conceicao do araguaia,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 124 | conde,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=conde,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 125 | constitucion,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=constitucion,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 126 | contamana,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=contamana,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 127 | coquimbo,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=coquimbo,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 128 | cururupu,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=cururupu,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 129 | de aar,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=de aar,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 130 | deer lake,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=deer lake,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 131 | destin,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=destin,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 132 | diego de almagro,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=diego de almagro,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 133 | dikson,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dikson,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 134 | dingle,ie -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dingle,ie&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 135 | dolbeau,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dolbeau,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 136 | dori,bf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dori,bf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 137 | dunda,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dunda,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 138 | dwarka,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dwarka,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 139 | dzaoudzi,yt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=dzaoudzi,yt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 140 | east london,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=east london,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 141 | edd,er -- query_url: http://api.openweathermap.org/data/2.5/weather?q=edd,er&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 142 | el badari,eg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=el badari,eg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 143 | eregli,tr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=eregli,tr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 144 | eskasem,af -- query_url: http://api.openweathermap.org/data/2.5/weather?q=eskasem,af&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 145 | esna,eg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=esna,eg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 146 | faya,td -- query_url: http://api.openweathermap.org/data/2.5/weather?q=faya,td&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 147 | filadelfia,py -- query_url: http://api.openweathermap.org/data/2.5/weather?q=filadelfia,py&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 148 | florianopolis,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=florianopolis,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 149 | frutal,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=frutal,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 150 | fuerte olimpo,py -- query_url: http://api.openweathermap.org/data/2.5/weather?q=fuerte olimpo,py&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 151 | gamarra,co -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gamarra,co&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 152 | gamba,ga -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gamba,ga&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 153 | garissa,ke -- query_url: http://api.openweathermap.org/data/2.5/weather?q=garissa,ke&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 154 | gashua,ng -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gashua,ng&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 155 | gat,ly -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gat,ly&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 156 | gazli,uz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gazli,uz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 157 | general elizardo aquino,py -- query_url: http://api.openweathermap.org/data/2.5/weather?q=general elizardo aquino,py&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 158 | georgetown,sh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=georgetown,sh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 159 | georgetown,gy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=georgetown,gy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 160 | geraldton,au -- query_url: http://api.openweathermap.org/data/2.5/weather?q=geraldton,au&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 161 | ghanzi,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ghanzi,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 162 | gizycko,pl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gizycko,pl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 163 | gobabis,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gobabis,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 164 | goderich,sl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=goderich,sl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 165 | goma,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=goma,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 166 | gore,et -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gore,et&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 167 | grahamstown,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=grahamstown,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 168 | grand gaube,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=grand gaube,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 169 | grand river south east,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=grand river south east,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 170 | grand-santi,gf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=grand-santi,gf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 171 | grindavik,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=grindavik,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 172 | groningen,sr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=groningen,sr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 173 | grootfontein,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=grootfontein,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 174 | guane,cu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=guane,cu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 175 | guarapari,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=guarapari,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 176 | gweta,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=gweta,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 177 | halifax,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=halifax,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 178 | hambantota,lk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hambantota,lk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 179 | hamilton,bm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hamilton,bm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 180 | haradok,by -- query_url: http://api.openweathermap.org/data/2.5/weather?q=haradok,by&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 181 | harlingen,nl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=harlingen,nl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 182 | harper,lr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=harper,lr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 183 | hauterive,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hauterive,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 184 | havre-saint-pierre,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=havre-saint-pierre,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 185 | henties bay,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=henties bay,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 186 | herat,af -- query_url: http://api.openweathermap.org/data/2.5/weather?q=herat,af&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 187 | hermanus,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hermanus,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 188 | hithadhoo,mv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hithadhoo,mv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 189 | hobyo,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hobyo,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 190 | hofn,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hofn,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 191 | huarmey,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=huarmey,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 192 | hunza,pk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=hunza,pk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 193 | husavik,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=husavik,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 194 | iberia,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=iberia,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 195 | illoqqortoormiut,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=illoqqortoormiut,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 196 | ilulissat,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ilulissat,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 197 | imbituba,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=imbituba,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 198 | inongo,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=inongo,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 199 | iqaluit,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=iqaluit,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 200 | itacoatiara,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=itacoatiara,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 201 | itaituba,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=itaituba,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 202 | itarema,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=itarema,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 203 | jacareacanga,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=jacareacanga,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 204 | jamestown,sh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=jamestown,sh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 205 | japura,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=japura,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 206 | jaru,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=jaru,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 207 | juazeiro,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=juazeiro,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 208 | kabinda,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kabinda,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 209 | kachikau,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kachikau,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 210 | kadi,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kadi,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 211 | kaduqli,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kaduqli,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 212 | kakonko,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kakonko,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 213 | kalemie,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kalemie,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 214 | kambove,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kambove,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 215 | kamenka,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kamenka,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 216 | kansanshi,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kansanshi,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 217 | kaoma,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kaoma,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 218 | karaul,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=karaul,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 219 | karkaralinsk,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=karkaralinsk,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 220 | karlskoga,se -- query_url: http://api.openweathermap.org/data/2.5/weather?q=karlskoga,se&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 221 | karonga,mw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=karonga,mw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 222 | kashi,cn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kashi,cn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 223 | kavaratti,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kavaratti,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 224 | kayanga,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kayanga,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 225 | kedrovyy,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kedrovyy,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 226 | kerchevskiy,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kerchevskiy,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 227 | khabary,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=khabary,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 228 | khash,ir -- query_url: http://api.openweathermap.org/data/2.5/weather?q=khash,ir&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 229 | khorixas,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=khorixas,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 230 | kibakwe,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kibakwe,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 231 | kilembe,ug -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kilembe,ug&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 232 | kindia,gn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kindia,gn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 233 | kismayo,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kismayo,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 234 | klaksvik,fo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=klaksvik,fo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 235 | knysna,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=knysna,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 236 | kokstad,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kokstad,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 237 | kondagaon,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kondagaon,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 238 | korablino,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=korablino,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 239 | korla,cn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=korla,cn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 240 | kraljevo,rs -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kraljevo,rs&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 241 | krasnokholmskiy,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=krasnokholmskiy,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 242 | krasnopavlivka,ua -- query_url: http://api.openweathermap.org/data/2.5/weather?q=krasnopavlivka,ua&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 243 | krasnoselkup,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=krasnoselkup,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 244 | kruisfontein,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kruisfontein,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 245 | kudahuvadhoo,mv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kudahuvadhoo,mv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 246 | kurtamysh,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kurtamysh,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 247 | kuytun,cn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=kuytun,cn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 248 | lagoa,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lagoa,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 249 | laguna,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=laguna,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 250 | lakkion,gr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lakkion,gr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 251 | lasa,cn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lasa,cn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 252 | lavumisa,sz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lavumisa,sz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 253 | lebu,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lebu,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 254 | ler,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ler,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 255 | lerwick,gb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lerwick,gb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 256 | liepaja,lv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=liepaja,lv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 257 | lima,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lima,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 258 | lincoln,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lincoln,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 259 | lira,ug -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lira,ug&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 260 | liverpool,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=liverpool,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 261 | loandjili,cg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=loandjili,cg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 262 | lodja,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lodja,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 263 | longyearbyen,sj -- query_url: http://api.openweathermap.org/data/2.5/weather?q=longyearbyen,sj&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 264 | los andes,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=los andes,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 265 | los llanos de aridane,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=los llanos de aridane,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 266 | luanda,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=luanda,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 267 | lucapa,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lucapa,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 268 | luderitz,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=luderitz,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 269 | luis correia,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=luis correia,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 270 | lutry,ch -- query_url: http://api.openweathermap.org/data/2.5/weather?q=lutry,ch&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 271 | maceio,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=maceio,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 272 | madimba,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=madimba,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 273 | mafra,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mafra,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 274 | mahajanga,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mahajanga,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 275 | mahebourg,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mahebourg,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 276 | malakal,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=malakal,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 277 | maldonado,uy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=maldonado,uy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 278 | mamlyutka,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mamlyutka,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 279 | mana,gf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mana,gf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 280 | manaure,co -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manaure,co&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 281 | mancio lima,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mancio lima,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 282 | mandal,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mandal,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 283 | manicore,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manicore,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 284 | maniitsoq,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=maniitsoq,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 285 | manjakandriana,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manjakandriana,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 286 | manoel urbano,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manoel urbano,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 287 | manono,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manono,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 288 | manta,ec -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manta,ec&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 289 | manyana,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=manyana,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 290 | mar del plata,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mar del plata,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 291 | marawi,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=marawi,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 292 | marcona,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=marcona,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 293 | margate,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=margate,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 294 | marienburg,sr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=marienburg,sr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 295 | mariental,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mariental,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 296 | marrakesh,ma -- query_url: http://api.openweathermap.org/data/2.5/weather?q=marrakesh,ma&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 297 | marzuq,ly -- query_url: http://api.openweathermap.org/data/2.5/weather?q=marzuq,ly&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 298 | masty,by -- query_url: http://api.openweathermap.org/data/2.5/weather?q=masty,by&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 299 | masuguru,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=masuguru,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 300 | matara,lk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=matara,lk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 301 | matay,eg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=matay,eg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 302 | medina,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=medina,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 303 | mehamn,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mehamn,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 304 | meulaboh,id -- query_url: http://api.openweathermap.org/data/2.5/weather?q=meulaboh,id&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 305 | mezen,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mezen,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 306 | mhlume,sz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mhlume,sz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 307 | micheweni,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=micheweni,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 308 | minab,ir -- query_url: http://api.openweathermap.org/data/2.5/weather?q=minab,ir&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 309 | minas novas,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=minas novas,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 310 | miranorte,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=miranorte,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 311 | mirina,gr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mirina,gr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 312 | mizdah,ly -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mizdah,ly&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 313 | mocambique,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mocambique,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 314 | mocuba,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mocuba,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 315 | molchanovo,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=molchanovo,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 316 | monte aprazivel,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=monte aprazivel,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 317 | montepuez,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=montepuez,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 318 | moose factory,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=moose factory,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 319 | mopipi,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mopipi,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 320 | morales,gt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=morales,gt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 321 | moroni,km -- query_url: http://api.openweathermap.org/data/2.5/weather?q=moroni,km&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 322 | morros,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=morros,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 323 | muli,mv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=muli,mv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 324 | mumford,gh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mumford,gh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 325 | murgab,tm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=murgab,tm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 326 | muros,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=muros,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 327 | mutoko,zw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mutoko,zw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 328 | mutsamudu,km -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mutsamudu,km&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 329 | mwinilunga,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=mwinilunga,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 330 | namibe,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=namibe,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 331 | nanortalik,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nanortalik,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 332 | nantucket,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nantucket,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 333 | narsaq,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=narsaq,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 334 | naryan-mar,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=naryan-mar,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 335 | natal,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=natal,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 336 | necochea,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=necochea,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 337 | neuquen,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=neuquen,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 338 | newton abbot,gb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=newton abbot,gb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 339 | nicoya,cr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nicoya,cr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 340 | nizwa,om -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nizwa,om&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 341 | nokaneng,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nokaneng,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 342 | nosy varika,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nosy varika,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 343 | nouadhibou,mr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nouadhibou,mr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 344 | nuuk,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=nuuk,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 345 | oistins,bb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=oistins,bb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 346 | olafsvik,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=olafsvik,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 347 | olinda,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=olinda,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 348 | ondjiva,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ondjiva,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 349 | ongwediva,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ongwediva,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 350 | opuwo,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=opuwo,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 351 | oranjemund,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=oranjemund,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 352 | oranjestad,aw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=oranjestad,aw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 353 | ostrovnoy,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ostrovnoy,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 354 | paamiut,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=paamiut,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 355 | padang,id -- query_url: http://api.openweathermap.org/data/2.5/weather?q=padang,id&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 356 | pangnirtung,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pangnirtung,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 357 | pangody,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pangody,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 358 | parabel,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=parabel,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 359 | paramonga,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=paramonga,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 360 | paratinga,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=paratinga,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 361 | pascagoula,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pascagoula,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 362 | pisco,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pisco,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 363 | plettenberg bay,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=plettenberg bay,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 364 | ponta do sol,cv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ponta do sol,cv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 365 | poopo,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=poopo,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 366 | port alfred,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=port alfred,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 367 | port elizabeth,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=port elizabeth,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 368 | port hawkesbury,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=port hawkesbury,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 369 | port shepstone,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=port shepstone,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 370 | port-gentil,ga -- query_url: http://api.openweathermap.org/data/2.5/weather?q=port-gentil,ga&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 371 | porto nacional,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=porto nacional,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 372 | porto torres,it -- query_url: http://api.openweathermap.org/data/2.5/weather?q=porto torres,it&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 373 | portree,gb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=portree,gb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 374 | potoci,ba -- query_url: http://api.openweathermap.org/data/2.5/weather?q=potoci,ba&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 375 | pozzallo,it -- query_url: http://api.openweathermap.org/data/2.5/weather?q=pozzallo,it&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 376 | presidencia roque saenz pena,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=presidencia roque saenz pena,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 377 | punta arenas,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=punta arenas,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 378 | qaanaaq,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=qaanaaq,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 379 | qarchi gak,af -- query_url: http://api.openweathermap.org/data/2.5/weather?q=qarchi gak,af&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 380 | qeshm,ir -- query_url: http://api.openweathermap.org/data/2.5/weather?q=qeshm,ir&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 381 | quatre cocos,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=quatre cocos,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 382 | quelimane,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=quelimane,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 383 | rabat,ma -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rabat,ma&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 384 | raisio,fi -- query_url: http://api.openweathermap.org/data/2.5/weather?q=raisio,fi&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 385 | rakai,ug -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rakai,ug&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 386 | ramon castilla,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ramon castilla,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 387 | raudeberg,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=raudeberg,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 388 | rawson,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rawson,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 389 | rehoboth,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rehoboth,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 390 | requena,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=requena,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 391 | ribeira grande,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ribeira grande,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 392 | riberalta,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=riberalta,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 393 | richards bay,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=richards bay,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 394 | rio gallegos,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rio gallegos,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 395 | riyadh,sa -- query_url: http://api.openweathermap.org/data/2.5/weather?q=riyadh,sa&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 396 | rocha,uy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rocha,uy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 397 | rodrigues alves,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rodrigues alves,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 398 | rumonge,bi -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rumonge,bi&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 399 | sabha,ly -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sabha,ly&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 400 | saint anthony,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint anthony,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 401 | saint george,bm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint george,bm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 379 | qaqortoq,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=qaqortoq,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 380 | quatre cocos,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=quatre cocos,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 381 | quelimane,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=quelimane,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 382 | quthing,ls -- query_url: http://api.openweathermap.org/data/2.5/weather?q=quthing,ls&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 383 | raga,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=raga,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 384 | rawson,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rawson,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 385 | rehoboth,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rehoboth,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 386 | riachao das neves,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=riachao das neves,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 387 | ribeira grande,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ribeira grande,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 388 | richards bay,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=richards bay,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 389 | rio gallegos,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rio gallegos,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 390 | rio grande,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rio grande,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 391 | rio pardo,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rio pardo,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 392 | rivadavia,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rivadavia,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 393 | road town,vg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=road town,vg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 394 | roald,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=roald,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 395 | rocha,uy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rocha,uy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 396 | roches noires,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=roches noires,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 397 | rognan,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rognan,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 398 | rojhan,pk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rojhan,pk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 399 | rolim de moura,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=rolim de moura,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 400 | ruthin,gb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ruthin,gb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 401 | saint anthony,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint anthony,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 402 | saint-augustin,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint-augustin,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 403 | saint-denis,re -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint-denis,re&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 404 | saint-francois,gp -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint-francois,gp&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 405 | saint-georges,gf -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint-georges,gf&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 406 | saint-joseph,re -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint-joseph,re&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 404 | saint-jean-de-braye,fr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint-jean-de-braye,fr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 405 | saint-joseph,re -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint-joseph,re&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 406 | saint-leu,re -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint-leu,re&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 407 | saint-philippe,re -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint-philippe,re&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 408 | sainte-rose,re -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sainte-rose,re&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 409 | sal rei,cv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sal rei,cv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 408 | saint-pierre,re -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saint-pierre,re&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 409 | sakaraha,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sakaraha,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 410 | salalah,om -- query_url: http://api.openweathermap.org/data/2.5/weather?q=salalah,om&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 411 | saldanha,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=saldanha,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 412 | salta,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=salta,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 413 | san andres,co -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san andres,co&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 412 | salinopolis,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=salinopolis,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 413 | sambava,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sambava,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 414 | san carlos de bariloche,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san carlos de bariloche,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 415 | san cristobal,ec -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san cristobal,ec&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 416 | san ignacio,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san ignacio,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 417 | san jose de sisa,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san jose de sisa,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 418 | san jose del guaviare,co -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san jose del guaviare,co&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 419 | san juan,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san juan,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 420 | san pedro,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san pedro,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 421 | san rafael,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san rafael,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 422 | san ramon,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san ramon,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 423 | san-pedro,ci -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san-pedro,ci&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 424 | santa marta de tormes,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=santa marta de tormes,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 425 | santa rosa,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=santa rosa,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 417 | san luis,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san luis,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 418 | san martin,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san martin,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 419 | san matias,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san matias,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 420 | san rafael,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san rafael,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 421 | san vicente de canete,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=san vicente de canete,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 422 | santa cruz,cr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=santa cruz,cr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 423 | santa isabel do rio negro,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=santa isabel do rio negro,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 424 | santa rosa,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=santa rosa,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 425 | santa vitoria do palmar,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=santa vitoria do palmar,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 426 | santiago del estero,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=santiago del estero,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 427 | sao bento do sul,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao bento do sul,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 427 | santona,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=santona,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 428 | sao felix do xingu,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao felix do xingu,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Row index: 429 | sao filipe,cv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao filipe,cv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 430 | sao joao da barra,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao joao da barra,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 431 | sao jose da coroa grande,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao jose da coroa grande,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 432 | savannah bight,hn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=savannah bight,hn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 433 | scottsburgh,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=scottsburgh,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 434 | sechura,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sechura,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 435 | sena madureira,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sena madureira,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 436 | sept-iles,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sept-iles,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 437 | serro,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=serro,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 438 | shar,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=shar,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 439 | sikonge,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sikonge,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 440 | sinazongwe,zm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sinazongwe,zm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 441 | sindand,af -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sindand,af&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 442 | sirjan,ir -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sirjan,ir&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 443 | skjervoy,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=skjervoy,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 444 | soavinandriana,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=soavinandriana,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 445 | songea,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=songea,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 446 | souillac,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=souillac,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 447 | springbok,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=springbok,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 448 | springdale,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=springdale,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 449 | steinhausen,ch -- query_url: http://api.openweathermap.org/data/2.5/weather?q=steinhausen,ch&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 450 | stokmarknes,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=stokmarknes,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 451 | stornoway,gb -- query_url: http://api.openweathermap.org/data/2.5/weather?q=stornoway,gb&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 452 | suez,eg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=suez,eg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 453 | sumbe,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sumbe,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 454 | sur,om -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sur,om&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 455 | sussex,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sussex,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 456 | tabas,ir -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tabas,ir&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 457 | tacuarembo,uy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tacuarembo,uy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 458 | takoradi,gh -- query_url: http://api.openweathermap.org/data/2.5/weather?q=takoradi,gh&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 459 | talcahuano,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=talcahuano,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 460 | tallahassee,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tallahassee,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 461 | talnakh,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=talnakh,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 462 | taltal,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=taltal,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 463 | tamandare,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tamandare,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 464 | taolanaro,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=taolanaro,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 465 | taoudenni,ml -- query_url: http://api.openweathermap.org/data/2.5/weather?q=taoudenni,ml&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 466 | tarija,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tarija,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 467 | tarudant,ma -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tarudant,ma&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 468 | tasiilaq,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tasiilaq,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 469 | teguldet,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=teguldet,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 470 | tekeli,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tekeli,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 471 | teodoro sampaio,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=teodoro sampaio,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 472 | tete,mz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tete,mz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 473 | thinadhoo,mv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=thinadhoo,mv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 474 | thompson,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=thompson,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 475 | tignere,cm -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tignere,cm&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 476 | tira sujanpur,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tira sujanpur,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 477 | toktogul,kg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=toktogul,kg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 478 | toliary,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=toliary,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 479 | torbay,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=torbay,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 480 | torres,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=torres,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 481 | touros,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=touros,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 482 | trairi,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=trairi,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 483 | trapani,it -- query_url: http://api.openweathermap.org/data/2.5/weather?q=trapani,it&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 484 | treinta y tres,uy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=treinta y tres,uy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 485 | trelew,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=trelew,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 486 | trincomalee,lk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=trincomalee,lk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 487 | tshela,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tshela,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 488 | tshikapa,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tshikapa,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 489 | tsienyane,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tsienyane,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 490 | tsihombe,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tsihombe,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 491 | tucano,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tucano,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 492 | udaipura,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=udaipura,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 493 | uitenhage,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=uitenhage,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 494 | umea,se -- query_url: http://api.openweathermap.org/data/2.5/weather?q=umea,se&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 495 | umzimvubu,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=umzimvubu,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 496 | upernavik,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=upernavik,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 497 | urucara,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=urucara,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 498 | ushirombo,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ushirombo,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 499 | ushuaia,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ushuaia,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 500 | usinsk,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=usinsk,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 501 | ussel,fr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ussel,fr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 502 | ust-shonosha,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ust-shonosha,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 503 | ustyuzhna,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ustyuzhna,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 504 | uvira,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=uvira,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 505 | vaasa,fi -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vaasa,fi&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 506 | vagur,fo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vagur,fo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 507 | valera,ve -- query_url: http://api.openweathermap.org/data/2.5/weather?q=valera,ve&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 508 | vallenar,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vallenar,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 509 | valparaiso,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=valparaiso,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 510 | vangaindrano,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vangaindrano,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 511 | vardo,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vardo,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 512 | veinticinco de mayo,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=veinticinco de mayo,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 513 | vestmanna,fo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vestmanna,fo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 514 | vestmannaeyjar,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vestmannaeyjar,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 515 | victoria,sc -- query_url: http://api.openweathermap.org/data/2.5/weather?q=victoria,sc&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 516 | viedma,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=viedma,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 517 | vila franca do campo,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vila franca do campo,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 518 | vila velha,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vila velha,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 519 | vilhena,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vilhena,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 520 | vredendal,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vredendal,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 521 | vryburg,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vryburg,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 522 | wahran,dz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=wahran,dz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 523 | warmbad,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=warmbad,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 524 | westport,ie -- query_url: http://api.openweathermap.org/data/2.5/weather?q=westport,ie&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 525 | wilmington,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=wilmington,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 526 | yabrud,sy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=yabrud,sy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 527 | yar-sale,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=yar-sale,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 528 | yavatmal,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=yavatmal,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 529 | yirol,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=yirol,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 530 | zamora,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=zamora,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 531 | zhanaozen,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=zhanaozen,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 532 | zharkent,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=zharkent,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
-    Row index: 533 | zhezkazgan,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=zhezkazgan,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 430 | sao gabriel da cachoeira,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao gabriel da cachoeira,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 431 | sao geraldo do araguaia,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao geraldo do araguaia,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 432 | sao joao da barra,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao joao da barra,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 433 | sao joao da ponte,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao joao da ponte,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 434 | sao luiz gonzaga,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao luiz gonzaga,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 435 | sao miguel do araguaia,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao miguel do araguaia,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 436 | sao paulo de olivenca,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao paulo de olivenca,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 437 | sao raimundo nonato,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sao raimundo nonato,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 438 | scottsboro,us -- query_url: http://api.openweathermap.org/data/2.5/weather?q=scottsboro,us&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 439 | scottsburgh,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=scottsburgh,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 440 | secunda,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=secunda,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 441 | semme,sn -- query_url: http://api.openweathermap.org/data/2.5/weather?q=semme,sn&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 442 | sept-iles,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sept-iles,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 443 | shakawe,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=shakawe,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 444 | sinkat,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sinkat,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 445 | sistranda,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sistranda,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 446 | skelleftea,se -- query_url: http://api.openweathermap.org/data/2.5/weather?q=skelleftea,se&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 447 | sokolo,ml -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sokolo,ml&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 448 | sokoto,ng -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sokoto,ng&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 449 | songea,tz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=songea,tz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 450 | souillac,mu -- query_url: http://api.openweathermap.org/data/2.5/weather?q=souillac,mu&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 451 | soyo,ao -- query_url: http://api.openweathermap.org/data/2.5/weather?q=soyo,ao&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 452 | stantsiya gorchakovo,uz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=stantsiya gorchakovo,uz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 453 | stokmarknes,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=stokmarknes,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 454 | strezhevoy,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=strezhevoy,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 455 | stykkisholmur,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=stykkisholmur,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 456 | suez,eg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=suez,eg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 457 | sur,om -- query_url: http://api.openweathermap.org/data/2.5/weather?q=sur,om&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 458 | swellendam,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=swellendam,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 459 | tabou,ci -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tabou,ci&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 460 | tabuk,sa -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tabuk,sa&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 461 | tacna,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tacna,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 462 | talnakh,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=talnakh,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 463 | taltal,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=taltal,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 464 | tamandare,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tamandare,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 465 | taolanaro,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=taolanaro,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 466 | tarancon,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tarancon,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 467 | tarata,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tarata,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 468 | tarko-sale,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tarko-sale,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 469 | tarudant,ma -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tarudant,ma&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 470 | tashtyp,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tashtyp,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 471 | tasiilaq,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tasiilaq,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 472 | tawkar,sd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tawkar,sd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 473 | taybad,ir -- query_url: http://api.openweathermap.org/data/2.5/weather?q=taybad,ir&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 474 | tazmalt,dz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tazmalt,dz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 475 | tazovskiy,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tazovskiy,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 476 | tefe,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tefe,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 477 | teguise,es -- query_url: http://api.openweathermap.org/data/2.5/weather?q=teguise,es&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 478 | tessalit,ml -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tessalit,ml&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 479 | thinadhoo,mv -- query_url: http://api.openweathermap.org/data/2.5/weather?q=thinadhoo,mv&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 480 | thompson,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=thompson,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 481 | tingo maria,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tingo maria,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 482 | tocopilla,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tocopilla,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 483 | torbay,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=torbay,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 484 | totma,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=totma,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 485 | touros,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=touros,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 486 | trinidad,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=trinidad,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 487 | tromso,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tromso,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 488 | tsihombe,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tsihombe,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 489 | tsiroanomandidy,mg -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tsiroanomandidy,mg&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 490 | tulum,mx -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tulum,mx&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 491 | tumannyy,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=tumannyy,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 492 | umzimvubu,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=umzimvubu,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 493 | upernavik,gl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=upernavik,gl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 494 | urucara,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=urucara,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 495 | urucui,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=urucui,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 496 | usak,tr -- query_url: http://api.openweathermap.org/data/2.5/weather?q=usak,tr&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 497 | ushuaia,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=ushuaia,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 498 | usinsk,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=usinsk,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 499 | uvarovka,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=uvarovka,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 500 | uyuni,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=uyuni,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 501 | vakhtan,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vakhtan,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 502 | valdivia,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=valdivia,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 503 | vallenar,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vallenar,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 504 | valparaiso,cl -- query_url: http://api.openweathermap.org/data/2.5/weather?q=valparaiso,cl&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 505 | vardo,no -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vardo,no&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 506 | vargem grande,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vargem grande,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 507 | veinticinco de mayo,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=veinticinco de mayo,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 508 | verkh-suetka,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=verkh-suetka,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 509 | vestmanna,fo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vestmanna,fo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 510 | vestmannaeyjar,is -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vestmannaeyjar,is&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 511 | vetlanda,se -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vetlanda,se&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 512 | victoria,sc -- query_url: http://api.openweathermap.org/data/2.5/weather?q=victoria,sc&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 513 | viedma,ar -- query_url: http://api.openweathermap.org/data/2.5/weather?q=viedma,ar&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 514 | vila franca do campo,pt -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vila franca do campo,pt&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 515 | vila velha,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vila velha,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 516 | vilhena,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=vilhena,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 517 | villavicencio,co -- query_url: http://api.openweathermap.org/data/2.5/weather?q=villavicencio,co&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 518 | villazon,bo -- query_url: http://api.openweathermap.org/data/2.5/weather?q=villazon,bo&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 519 | viseu,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=viseu,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 520 | waddan,ly -- query_url: http://api.openweathermap.org/data/2.5/weather?q=waddan,ly&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 521 | wajir,ke -- query_url: http://api.openweathermap.org/data/2.5/weather?q=wajir,ke&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 522 | walvis bay,na -- query_url: http://api.openweathermap.org/data/2.5/weather?q=walvis bay,na&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 523 | warri,ng -- query_url: http://api.openweathermap.org/data/2.5/weather?q=warri,ng&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 524 | watsa,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=watsa,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 525 | weligama,lk -- query_url: http://api.openweathermap.org/data/2.5/weather?q=weligama,lk&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 526 | werda,bw -- query_url: http://api.openweathermap.org/data/2.5/weather?q=werda,bw&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 527 | willowmore,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=willowmore,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 528 | winchester,ca -- query_url: http://api.openweathermap.org/data/2.5/weather?q=winchester,ca&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 529 | witrivier,za -- query_url: http://api.openweathermap.org/data/2.5/weather?q=witrivier,za&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 530 | wukari,ng -- query_url: http://api.openweathermap.org/data/2.5/weather?q=wukari,ng&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 531 | xique-xique,br -- query_url: http://api.openweathermap.org/data/2.5/weather?q=xique-xique,br&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 532 | xuddur,so -- query_url: http://api.openweathermap.org/data/2.5/weather?q=xuddur,so&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 533 | yangambi,cd -- query_url: http://api.openweathermap.org/data/2.5/weather?q=yangambi,cd&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 534 | yar-sale,ru -- query_url: http://api.openweathermap.org/data/2.5/weather?q=yar-sale,ru&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 535 | yarada,in -- query_url: http://api.openweathermap.org/data/2.5/weather?q=yarada,in&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 536 | yauya,pe -- query_url: http://api.openweathermap.org/data/2.5/weather?q=yauya,pe&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 537 | young,uy -- query_url: http://api.openweathermap.org/data/2.5/weather?q=young,uy&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 538 | zaltan,ly -- query_url: http://api.openweathermap.org/data/2.5/weather?q=zaltan,ly&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 539 | zharkent,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=zharkent,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
+    Row index: 540 | zhezkazgan,kz -- query_url: http://api.openweathermap.org/data/2.5/weather?q=zhezkazgan,kz&units=imperial&APPID=b28cc4b4c0a1d1d9ff4c2d9e808f9a5a
     Total errors:  1
     
 
@@ -1119,63 +1126,63 @@ city_wdf.head()
   <tbody>
     <tr>
       <th>0</th>
-      <td>abu dhabi</td>
-      <td>ae</td>
-      <td>2017-08-23 20:00:00</td>
-      <td>54.37</td>
-      <td>24.47</td>
-      <td>89.60</td>
-      <td>55.0</td>
-      <td>20.0</td>
-      <td>14.99</td>
+      <td>abeche</td>
+      <td>td</td>
+      <td>2017-09-08 13:40:20</td>
+      <td>20.83</td>
+      <td>13.83</td>
+      <td>72.99</td>
+      <td>83.0</td>
+      <td>24.0</td>
+      <td>3.40</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>acarau</td>
-      <td>br</td>
-      <td>2017-08-23 21:19:52</td>
-      <td>-40.12</td>
-      <td>-2.89</td>
-      <td>77.79</td>
-      <td>81.0</td>
+      <td>abu samrah</td>
+      <td>qa</td>
+      <td>2017-09-08 13:00:00</td>
+      <td>55.58</td>
+      <td>24.25</td>
+      <td>91.40</td>
+      <td>33.0</td>
       <td>0.0</td>
-      <td>18.14</td>
+      <td>4.70</td>
     </tr>
     <tr>
       <th>2</th>
       <td>acari</td>
       <td>pe</td>
-      <td>2017-08-23 21:19:53</td>
+      <td>2017-09-08 13:40:21</td>
       <td>-74.62</td>
       <td>-15.43</td>
-      <td>46.20</td>
-      <td>67.0</td>
-      <td>0.0</td>
-      <td>2.04</td>
+      <td>66.69</td>
+      <td>54.0</td>
+      <td>8.0</td>
+      <td>2.95</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>aconibe</td>
-      <td>gq</td>
-      <td>2017-08-23 21:19:53</td>
-      <td>10.94</td>
-      <td>1.30</td>
-      <td>69.42</td>
-      <td>98.0</td>
-      <td>92.0</td>
-      <td>2.15</td>
+      <td>adjumani</td>
+      <td>ug</td>
+      <td>2017-09-08 13:40:21</td>
+      <td>31.79</td>
+      <td>3.38</td>
+      <td>68.04</td>
+      <td>96.0</td>
+      <td>68.0</td>
+      <td>3.74</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>adeje</td>
-      <td>es</td>
-      <td>2017-08-23 21:00:00</td>
-      <td>-16.73</td>
-      <td>28.12</td>
-      <td>82.40</td>
-      <td>88.0</td>
-      <td>0.0</td>
-      <td>8.05</td>
+      <td>agadir</td>
+      <td>ma</td>
+      <td>2017-09-08 13:00:00</td>
+      <td>-9.60</td>
+      <td>30.42</td>
+      <td>64.40</td>
+      <td>100.0</td>
+      <td>90.0</td>
+      <td>3.36</td>
     </tr>
   </tbody>
 </table>
@@ -1220,7 +1227,7 @@ x_axis = city_wdf["lat"]
 y_axis = city_wdf["max_temperature"]
 
 
-sns.regplot(x=x_axis, y=y_axis, color="magenta", marker="o", fit_reg=False, 
+sns.regplot(x=x_axis, y=y_axis, color="magenta", marker="o", fit_reg=True, 
             scatter_kws={"s":80, "linewidths":1, "edgecolor":"k"})
 
 sns.set_style("darkgrid")
@@ -1244,8 +1251,8 @@ plt.show()
 # from California most of my life, but having experienced east coast 
 # humidity, there is a percentage of humidity in all the cities.  That
 # tells me that humidity doesn't have to be connected to sticky yucky
-# weather.  Humidity doesn't seem to impact the bilding of cities as
-# they are spread out relatively well with some concentrations.
+# weather.  Also, Humidity doesn't seem to impact the bilding of cities 
+# as they are spread out relatively well with some concentrations.
 ```
 
 
