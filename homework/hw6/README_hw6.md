@@ -1,21 +1,22 @@
 ## hw6 | Assignment - pagila
 
-## Data Definition Language - Schema Public
+## DDL - Schema Public - Pagila DB
  
 
 ### Create the pagila database in the Public schema
 
 - Start up a console (I use Git-Bash), clone the GitHub repository, and move to the directory holding the pagila sql create files.
 
-- ~\Data-Analytics\homework\hw6\pagila-0.10.1\pagila has the three files.
+- GitHub Repository https://github.com/chrisg4github/Data-Analytics.git
+- Data-Analytics/homework/hw6/pagila-0.10.1/pagila
 
 - Enter > psql -U postgres and enter the password for postgres at the prompt.
-- Run each of the three files.
+
+- Run each of the three files from psql as postgres.
 	- \i pagila-schema.sql
 	- \i pagila-insert-data.sql
 	- \i pagila-data.sql
-- Test pagila database access from pgAdmin or SQLWorkbench.
- 
+
  
 ## Create SQL
 ### Query group 1
@@ -24,7 +25,7 @@
  
 	`select first_name, last_name from actor limit 5;`
 
-	![Results](/images/select_actor_first_last_names.png)
+	![Results](select_actor_first_last_names.png)
 
 
 - Display the first and last name of each actor in a single column in upper case letters. Name the column Actor Name.
@@ -32,7 +33,7 @@
 	`select first_name || ' ' || last_name Actor_Name` 
 	`from actor limit 5;`
 
-	![Results](/images/select_actor_first-last-name.png)
+	![Results](select_actor_first-last-name.png)
 
 
 ### Query group 2
