@@ -43,7 +43,7 @@
 	`select actor_id, first_name, last_name`
 	`from actor where first_name like 'Joe.';`
 	
-	![Results](/images/select_actor_first_name_Joe._.png)
+	![Results](select_actor_first_name_Joe._.png)
 
 
 - Find all actors whose last name contain the letters GEN. Make this case insensitive.
@@ -51,14 +51,14 @@
 	`select actor_id, first_name, last_name` 
 	`from actor where last_name ilike '%GEN%';`
 
-	![Results](/images/select_actor_last_name_GEN.png)
+	![Results](select_actor_last_name_GEN.png)
 
 - Find all actors whose last names contain the letters LI. This time, order the rows by last name and first name, in that order. Make this case insensitive.
 
 	`select last_name,first_name from actor` 
 	`where last_name ilike '%LI%' order by last_name,` `first_name;`
 
-	![Results](/images/select_actor_last_name_LI.png)
+	![Results](select_actor_last_name_LI.png)
 
 - Using IN, display the country_id and country columns of the following countries: Afghanistan, Bangladesh, and China.
 
@@ -66,7 +66,7 @@
 	`where country in `
 	`('Afghanistan','Bangladesh','China');`
 
-	![Results](/images/select_countries_using_in.png)
+	![Results](select_countries_using_in.png)
 
 ### Query group 3
 
@@ -76,7 +76,7 @@
 
 	`select * from actor limit 5;`
 
-	![Results](/images/alter_table_add_middle_name_select.png)
+	![Results](alter_table_add_middle_name_select.png)
 	
 - You realize that some of these actors have tremendously long last names. Change the data type of the middle_name column to something that can hold more than varchar.
 	
@@ -84,7 +84,7 @@
 
 	`alter table actor alter column middle_name type text;`
 
-	![Results](/images/alter_table_alter_middle_name_text.png)
+	![Results](alter_table_alter_middle_name_text.png)
 
 
 
@@ -95,7 +95,7 @@
 	`select * from actor limit 5;`
 
 	
-	![Results](/images/alter_actor_drop_middle_name.png)
+	![Results](alter_actor_drop_middle_name.png)
 
 
 ### Query group 4
@@ -107,7 +107,7 @@
 	`group by last_name`
 	`order by last_name limit 5;` 
 
-	![Results](/images/actor_last_name_count.png)
+	![Results](actor_last_name_count.png)
 
 - List last names of actors and the number of actors who have that last name, but only for names that are shared by at least two actors
 	
@@ -117,7 +117,7 @@
 	`having count(*) > 1`
 	`order by last_name limit 5;` 
 
-	![Results](/images/actor_last_name_count_2_or_more.png)
+	![Results](actor_last_name_count_2_or_more.png)
 
 - Oh, no! The actor HARPO WILLIAMS was accidentally entered in the actor table as GROUCHO WILLIAMS. Write a query to fix the record.
 
@@ -133,7 +133,7 @@
 	`where first_name = 'HARPO'`
     `and last_name = 'WILLIAMS';`
 
-	![Results](/images/update_actor_first_name.png)
+	![Results](update_actor_first_name.png)
 
 	`commit;`
 
@@ -148,7 +148,7 @@
 	`select * from actor`
 	`where first_name in ('HARPO', 'GROUCHO');`
 
-	![Results](/images/select_actor_first_name1.png)
+	![Results](select_actor_first_name1.png)
 	
 	`select case`
     `     when first_name = 'GROUCHO' then 'MUCHO GROUCHO'`
@@ -157,7 +157,7 @@
     `   end as fname`
 	`from actor where first_name in ('HARPO', 'GROUCHO');`
 
-	![Results](/images/select_actor_first_name3.png)
+	![Results](select_actor_first_name3.png)
 
 	`update actor set first_name =`
     `  case` 
@@ -166,12 +166,12 @@
     `  end` 
 	`where first_name in ('HARPO', 'GROUCHO');`
 
-	![Results](/images/update_actor_first_name2.png)
+	![Results](update_actor_first_name2.png)
 
 
 	`select * from actor where first_name like '%GROUCHO';`
 
-	![Results](/images/select_actor_first_name4.png)
+	![Results](select_actor_first_name4.png)
 
 	`commit;`
 
@@ -199,7 +199,7 @@
 
 	No difference.  They are the same join.
 
-	![Results](/images/sql_join_examples.png)
+	![Results](sql_join_examples.png)
 
 
 - When would you use rank? 
@@ -267,7 +267,7 @@
 	`left join country cty`
 	`on c.country_id = cty.country_id;`
 
-	![Results](/images/select_staff_name_address_.png)
+	![Results](select_staff_name_address_.png)
 
 
 - Use a JOIN to display the total amount rung up by each staff member in January of 2007. Use tables staff and payment. You’ll have to google for this one, we didn’t cover it explicitly in class. 
@@ -280,7 +280,7 @@
 	`where p.payment_date between '2007-01-01' and '2007-01-31'`
 	`group by s.staff_id, s.first_name, s.last_name;`
 
-	![Results](/images/select_staff_jan_2007_sales_total.png)
+	![Results](select_staff_jan_2007_sales_total.png)
 
 - List each film and the number of actors who are listed for that film. Use tables film_actor and film. Use inner join.
 
@@ -291,7 +291,7 @@
 	`group by f.title`
 	`order by f.title limit 5;`
 
-	![Results](/images/select_movie_actor_total.png)
+	![Results](select_movie_actor_total.png)
 
 
 - How many copies of the film Hunchback Impossible exist in the inventory system?
@@ -303,7 +303,7 @@
 	`where lower(f.title) = 'hunchback impossible'`
 	`group by f.title;`
 
-	![Results](/images/select_hb_impossible_inventory_count.png)
+	![Results](select_hb_impossible_inventory_count.png)
 
 
 - Using the tables payment and customer and the JOIN command, list the total paid by each customer. List the customers alphabetically by last name:
@@ -316,7 +316,7 @@
 	`group by c.first_name, c.last_name, c.customer_id`
 	`order by c.last_name asc limit 5;`
 
-	![Results](/images/select_total_customer_rental_fees.png)
+	![Results](select_total_customer_rental_fees.png)
 
 ### Query group 7
 - The music of Queen and Kris Kristofferson have seen an unlikely resurgence. As an unintended consequence, films starting with the letters K and Q have also soared in popularity. display the titles of movies starting with the letters K and Q whose language is English.
@@ -328,7 +328,7 @@
 	`and (f.title like 'K%' or f.title like 'Q%')`
 	`order by 1;`
 
-	![Results](/images/select_movies_k_q_english.png)
+	![Results](select_movies_k_q_english.png)
 
 - Use subqueries to display all actors who appear in the film Alone Trip.
 
@@ -342,7 +342,7 @@
 	`where lower(f.title) like 'alone trip'`
 	`order by 3;`
 
-	![Results](/images/select_alone_trip_actor_names.png)
+	![Results](select_alone_trip_actor_names.png)
 
 - You want to run an email marketing campaign in Canada, for which you will need the names and email addresses of all Canadian customers. Use joins to retrieve this information.
 
@@ -357,7 +357,7 @@
 	`on ct.country_id = cty.country_id`
 	`where country = 'Canada';`
 
-	![Results](/images/select_canada_customers_campaign.png)
+	![Results](select_canada_customers_campaign.png)
 
 - Sales have been lagging among young families, and you wish to target all family movies for a promotion. Identify all movies categorized as a family film.
 Now we mentioned family film, but there is no family film category. There’s a category that resembles that. In the real world nothing will be exact.
@@ -369,7 +369,7 @@ Now we mentioned family film, but there is no family film category. There’s a 
 	`where f.rating = 'G'` 
  	`order by f.title limit 5;`
 
-	![Results](/images/select_family_movies_rated_g.png)
+	![Results](select_family_movies_rated_g.png)
 
 	`select f.title, f.rating, c.name, f.description`
 	`from film f`
@@ -381,7 +381,7 @@ Now we mentioned family film, but there is no family film category. There’s a 
 	`and f.rating = 'G'`
 	`order by 1 limit 5;`
 
-	![Results](/images/select_family_movies_rated_g2.png)
+	![Results](select_family_movies_rated_g2.png)
 
 
 - Display the most frequently rented movies in descending order.
@@ -395,7 +395,7 @@ Now we mentioned family film, but there is no family film category. There’s a 
 	`group by f.title`
 	`order by 2 desc limit 10;`
 
-	![Results](/images/select_popular_movie_rentals.png)
+	![Results](select_popular_movie_rentals.png)
 	
 - Write a query to display how much business, in dollars, each store brought in.
 
@@ -415,7 +415,7 @@ Now we mentioned family film, but there is no family film category. There’s a 
 	`group by 1,2,3`
 	`order by 1;`
 
-	![Results](/images/select_total_dollars_by_store.png)
+	![Results](select_total_dollars_by_store.png)
 
 
 - Write a query to display for each store its store ID, city, and country.
@@ -434,7 +434,7 @@ Now we mentioned family film, but there is no family film category. There’s a 
 	`on ct.country_id = cty.country_id`
 	`order by 1;`
 
-	![Results](/images/select_store_city_country.png)
+	![Results](select_store_city_country.png)
 
 
 - List the top five genres in gross revenue in descending order.
@@ -455,7 +455,7 @@ Now we mentioned family film, but there is no family film category. There’s a 
 	`group by c.name`
 	`order by 2 desc limit 5;`
 
-	![Results](/images/select_top_genre_revenue.png)
+	![Results](select_top_genre_revenue.png)
  
 
 ### Query group 8
@@ -477,20 +477,20 @@ Now we mentioned family film, but there is no family film category. There’s a 
 	`group by c.name`
 	`order by 2 desc;`
 
-	![Results](/images/view_top_genre_revenue.png)
+	![Results](view_top_genre_revenue.png)
 
 	
 - How would you display the view that you created in previous sql statement?
 
 	`select * from top_5_genre_revenue limit 5;`
 
-	![Results](/images/select_view_top_genre_revenue.png)
+	![Results](select_view_top_genre_revenue.png)
 
 - You find that you no longer need the view top_five_genres. Write a query to delete it.
 
 	`drop view if exists top_5_genre_revenue;`
 
-	![Results](/images/drop_view_top_genre_revenue.png)
+	![Results](drop_view_top_genre_revenue.png)
 	
 
 ## Appendix 
