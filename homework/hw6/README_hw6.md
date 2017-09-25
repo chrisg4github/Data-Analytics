@@ -1,5 +1,16 @@
 ## hw6 | Assignment - pagila
 
+## Viewing this Markdown File:
+- This file and associated images can be viewed from GitHub by clicking on [README_hw6.md in GitHub](https://github.com/chrisg4github/Data-Analytics/blob/master/homework/hw6/README_hw6.md)
+
+- If you have MarkdownPad installed on your Windows 7 OS computer.
+
+	![About MarkdownPad](MarkdownPad_About.png)
+
+	In the drop-down list => Tools => Preview Markdown in Browser should display the text and images in a browser.
+
+- **Editing the md file with Sublime Text 3 won't display the images, and from sublime Text 3 while ctrl-shift-G does bring up a browser, the images don't display.**
+ 
 ## DDL - Schema Public - Pagila DB
  
 
@@ -7,8 +18,8 @@
 
 - Start up a console (I use Git-Bash), clone the GitHub repository, and move to the directory holding the pagila sql create files.
 
-- GitHub Repository https://github.com/chrisg4github/Data-Analytics.git
-- Data-Analytics/homework/hw6/pagila-0.10.1/pagila
+- [GitHub Repository](https://github.com/chrisg4github/Data-Analytics/tree/master/homework/hw6)
+- [pagila database files](https://github.com/chrisg4github/Data-Analytics/tree/master/homework/hw6/pagila-0.10.1/pagila)
 
 - Enter > psql -U postgres and enter the password for postgres at the prompt.
 
@@ -200,6 +211,9 @@
 	No difference.  They are the same join.
 
 	![Results](sql_join_examples.png)
+
+	[**Image from w3schools**](https://www.w3schools.com/sql/sql_join.asp)
+
 
 
 - When would you use rank? 
@@ -494,8 +508,6 @@ Now we mentioned family film, but there is no family film category. There’s a 
 	
 
 ## Appendix 
-
-### markdown discards some UNDERSCORES so those table or view names are bolded
 
 ### Tables
 - actor
