@@ -218,7 +218,7 @@
 
 - When would you use rank? 
 
-	Use Rank() to assign a rank number based on the over (partition col order by col) clause to assiciate a value with the grouping.  This groups the same values within each rank number, and between groups the rank numbers can jump to show the relative position of the next group.
+	Use Rank() to assign a rank number based on the over (partition col order by col) clause to associate a value with the grouping.  This groups the same values within each rank number, and between groups the rank numbers can jump to show the relative position of the next group.
 
 	`select f.title, f.rental_duration, rank()` 
 	`over (order by rental_duration desc) from film f;`
