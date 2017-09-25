@@ -30,6 +30,8 @@
 
  
 ## Create SQL
+**All sql queries are in ** [hw6-sql-queries.sql in GitHub](https://github.com/chrisg4github/Data-Analytics/blob/master/homework/hw6/hw6-sql-queries.sql)
+
 ### Query group 1
 
 - You need a list of all the actors’ first name and last name.
@@ -135,6 +137,8 @@
 	`select * from actor`
 	` where first_name = 'GROUCHO'`
 	`  and last_name = 'WILLIAMS';`
+
+	![Results](select_groucho_williams.png)
 
 	`update actor set first_name = 'HARPO'`
 	` where first_name = 'GROUCHO'`
