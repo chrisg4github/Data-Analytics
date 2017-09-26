@@ -235,13 +235,14 @@ where l.name = 'English'
 order by 1;
 
 -- Use subqueries to display all actors who appear in the film Alone Trip.
-select f.title as movie_title, a.first_name as actor_first_name, 
-a.last_name as actor_last_name
-from film f
-left join film_actor fa
-on f.film_id = fa.film_id
-left join actor a
-on fa.actor_id = a.actor_id
+select f.title as movie_title, fa_a.first_name as actor_first_name, 
+fa_a.last_name as actor_last_name
+from (select fa.*, a.*
+        from film_actor fa
+        left join actor a
+      on fa.actor_id = a.actor_id)fa_a
+left join film f
+on fa_a.film_id = f.film_id
 where lower(f.title) like 'alone trip'
 order by 3;
 
