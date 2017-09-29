@@ -78,11 +78,10 @@ commit;
 select * from actor
 where first_name in ('HARPO', 'GROUCHO');
 
-select case 
+select case
          when first_name = 'GROUCHO' then 'MUCHO GROUCHO'
          when first_name = 'HARPO' then 'GROUCHO'
-         else first_name
-       end as fname
+       end
 from actor 
 where first_name in ('HARPO', 'GROUCHO');
 
