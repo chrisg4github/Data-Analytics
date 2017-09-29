@@ -97,7 +97,8 @@
 - Using IN, display the country_id and country columns of the following countries: Afghanistan, Bangladesh, and China.
 
   ```sql
-  select country_id, country from country 
+  select country_id, country 
+    from country 
    where country in ('Afghanistan','Bangladesh','China');
   ```
 
@@ -149,7 +150,8 @@
 
 
   ```sql
-  select last_name, count(*) from actor
+  select last_name, count(*) 
+    from actor
    group by last_name
    order by last_name limit 5;
   ```
@@ -161,7 +163,7 @@
 
   ```sql
   select last_name, count(*)
-  	from actor
+    from actor
    group by last_name
   having count(*) > 1
    order by last_name limit 5;
@@ -174,7 +176,8 @@
   Oh, no! The actor HARPO WILLIAMS was accidentally entered in the actor table as GROUCHO WILLIAMS. Write a query to fix the record.
 
   ```sql
-  select * from actor
+  select * 
+    from actor
    where first_name = 'GROUCHO'
      and last_name = 'WILLIAMS';
   ```
@@ -188,7 +191,8 @@
   ```
 
   ```sql
-  select * from actor
+  select * 
+    from actor
    where first_name = 'HARPO'
      and last_name = 'WILLIAMS';
   ```
@@ -209,7 +213,8 @@
     (Hint: update the record using a unique identifier.)
 
   ```sql
-  select * from actor
+  select * 
+    from actor
    where first_name in ('HARPO', 'GROUCHO');
   ```
 
@@ -222,7 +227,8 @@
            when first_name = 'HARPO' then 'GROUCHO'
            else first_name
          end as fname
-    from actor where first_name in ('HARPO', 'GROUCHO');
+    from actor 
+   where first_name in ('HARPO', 'GROUCHO');
   ```
 
   ![Results](select_actor_first_name3.png)
@@ -321,7 +327,8 @@
   Use a group by when you want to aggregate the values within the values of the group by column or columns.
 
   ```sql
-  select last_name, count(*) from actor
+  select last_name, count(*) 
+    from actor
    group by last_name order by last_name;
   ```
 
@@ -430,7 +437,8 @@
 - The music of Queen and Kris Kristofferson have seen an unlikely resurgence. As an unintended consequence, films starting with the letters K and Q have also soared in popularity. display the titles of movies starting with the letters K and Q whose language is English.
 
   ```sql
-  select f.title, l.name as movie_language from film f
+  select f.title, l.name as movie_language 
+    from film f
   left join language l
   on f.language_id = l.language_id
    where l.name = 'English'
@@ -453,7 +461,7 @@
   left join film f
   on fa_a.film_id = f.film_id
    where lower(f.title) like 'alone trip'
-  order by 3;
+   order by 3;
   ```
 
   ![Results](select_alone_trip_actor_names.png)
