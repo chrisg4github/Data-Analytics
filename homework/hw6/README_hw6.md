@@ -1,14 +1,17 @@
 ## hw6 | Assignment - pagila
 
 ## Viewing this Markdown File:
-- This file and associated images can be viewed from GitHub by clicking on [README_hw6.md in GitHub](https://github.com/chrisg4github/Data-Analytics/blob/master/homework/hw6/README_hw6.md)
+- This file and associated images should be viewed from GitHub by clicking on [README_hw6.md in GitHub](https://github.com/chrisg4github/Data-Analytics/blob/master/homework/hw6/README_hw6.md)
+- If you have MarkdownPad installed on a Windows 7 PC.
 
-- If you have MarkdownPad installed on your Windows 7 OS computer.
 
-  ![About MarkdownPad](MarkdownPad_About.png)
+![About MarkdownPad](MarkdownPad_About.png)
 
-  In the drop-down list => Tools => Preview Markdown in Browser should display the text and images in a browser.
+​		In the drop-down list => Tools => Preview Markdown in Browser should display 
 
+​                the text and images in a browser.
+
+- If you have Typora on your PC, the images should display correctly in Typora.  
 - **Editing the md file with Sublime Text 3 won't display the images, and from sublime Text 3 while ctrl-shift-G does bring up a browser, the images don't display.**
 
 ## DDL - Schema Public - Pagila DB
