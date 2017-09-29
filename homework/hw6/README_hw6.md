@@ -409,11 +409,11 @@
 
   ```sql
   select f.title, count(inv.film_id)
-  `from film f
-  `left join inventory inv
-  `on f.film_id = inv.film_id
-  `where lower(f.title) = 'hunchback impossible'
-  `group by f.title;
+    from film f
+  left join inventory inv
+  on f.film_id = inv.film_id
+   where lower(f.title) = 'hunchback impossible'
+   group by f.title;
   ```
 
   ![Results](select_hb_impossible_inventory_count.png)
@@ -612,8 +612,8 @@
     on i.inventory_id = r.inventory_id
     left join payment p
     on r.rental_id = p.rental_id
-    group by c.name
-    order by 2 desc;
+     group by c.name
+     order by 2 desc;
   ```
 
   ![Results](view_top_genre_revenue.png)
