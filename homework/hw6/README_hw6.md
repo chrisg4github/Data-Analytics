@@ -359,7 +359,7 @@
   ```sql
   select s.first_name,s.last_name,a.address,
   a.district, c.city, cty.country	
-  from staff s
+    from staff s
   left join address a
   on s.address_id = a.address_id
   left join city c
