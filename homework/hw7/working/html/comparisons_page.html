@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Compare Plots</title>
+  
+  <!-- bootstrapcdn stylesheet -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+  
+  <!--reset stylesheet -->
+  <link type="text/css" rel="stylesheet" href="../css/reset.css">
+  
+  <!-- landing page stylesheet  -->
+  <link type="text/css" rel="stylesheet" href="../css/comparisons_style.css">
+  
+  <!-- jquery file  -->
+  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+  
+  <!-- bootstrap javascript file -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="lat-link" href="landing_page.html">Latitude</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="temperature_page.html">Max Temperature</a></li>
+              <li><a href="humidity_page.html">Humidity</a></li>
+              <li><a href="cloudiness_page.html">Cloudiness</a></li>
+              <li><a href="wind_mph_page.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Comparisons</a></li>
+          <li><a href="data_page.html">Data</a></li>
+        </ul>
+      </div>
+      <!-- navbar-collapse -->
+    </div>
+    <!-- container-fluid -->
+  </nav>
+  
+  <!-- Our rows function in containers (grid created). -->
+  <div class="container-fluid">
+    <!-- Our columns function in rows. -->
+    <div class="rows">
+      <h1>Comparison: Latitude vs. X</h1>
+      <hr>
+      <!-- Columns have 12 areas of width to work with. -->
+      <!-- One half of screen (6/12) -->
+      <div class="col-md-6">
+        <section id="img-1">
+          <h3> vs. Max Temperature</h3>
+          <figure>
+            <img class="img-responsive" id="temp-img" src="../images/lat_temp_scatter.png" width="500" height="500" alt="Temperature vs. Latitude">
+          </figure>
+        </section>
+      </div>
+        <!-- One half of screen (6/12) -->
+      <div class="col-md-6">
+        <section id="img-2">
+          <h3> vs. Cloudiness</h3>
+          <figure>
+            <img class="img-responsive" id="cld-img" src="../images/lat_cloudiness_scatter.png" width="500" height="500" alt="Cloudiness vs. Latitude">
+          </figure>
+        </section>
+      </div>
+    </div>
+
+    <div class="rows">
+      <div class="col-md-6">
+        <section id="img-3">
+          <h3> vs. Humidity</h3>
+          <figure>
+            <img class="img-responsive" id="humd-img" src="../images/lat_humidity_scatter.png" width="500" height="500" alt="Humidity vs. Latitude">
+          </figure>
+        </section>
+       <!-- div - row 1 col-md-6 end --> 
+      </div>
+      <div class="col-md-6">
+        <section id="img-4">
+          <h3> vs. Wind Speed</h3>
+          <figure>
+            <img class="img-responsive" id="wmph-img" src="../images/lat_windmph_scatter.png" width="500" height="500" alt="Wind Speed vs. Latitude">
+          </figure>
+        </section>
+      <!-- div - row 2 col-md-6 end -->  
+      </div>
+    <!-- div - row end -->
+    </div>
+  <!-- div container end -->
+  </div>
+
+</body>
+
+</html>	

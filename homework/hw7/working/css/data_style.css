@@ -1,0 +1,29 @@
+/* data_style.css */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1{
+  font-size: 36px;
+  font-weight: bold;
+  color: #47d2b8;
+  margin-top: 5%;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  color: #47d2b8;
+  margin-top: 4.75%;
+}
+
+#lat-link{
+  font-family: Times New Roman, Times, Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #47d2b8;
+}

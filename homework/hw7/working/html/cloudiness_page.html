@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cloudiness Plot</title>
+  
+  <!-- bootstrapcdn stylesheet -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+  
+  <!--reset stylesheet -->
+  <link type="text/css" rel="stylesheet" href="../css/reset.css">
+  
+  <!-- landing page stylesheet  -->
+  <link type="text/css" rel="stylesheet" href="../css/cloudiness_style.css">
+  
+  <!-- jquery file  -->
+  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+  
+  <!-- bootstrap javascript file -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="lat-link" href="landing_page.html">Latitude</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="temperature_page.html">Max Temperature</a></li>
+              <li><a href="humidity_page.html">Humidity</a></li>
+              <li><a href="cloudiness_page.html">Cloudiness</a></li>
+              <li><a href="wind_mph_page.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparisons_page.html">Comparisons</a></li>
+          <li><a href="data_page.html">Data</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+  <!-- Our rows function in containers (grid created). -->
+  <div class="container-fluid">
+    <!-- Our columns function in rows. -->
+    <div class="row">
+            <!-- Columns have 12 areas of width to work with. -->
+      <!-- One third of screen (8/12) -->
+      <div class="col-md-6">
+        <h1 align="center">Cloudiness</h1>
+        <section id="cloud-main">
+          <figure>
+            <img class="img-responsive"id="cloud-img" src="../images/lat_cloudiness_scatter.png" width="800" height="800" alt="Cloudiness vs. Latitude">
+          </figure>
+        </section>
+      <!-- div col 6 end -->  
+      </div>  
+   
+      <!-- Visualizations -->
+      <h2 align="center">Visualizations</h2>
+      <div class="col-md-3">
+        <section id="viz-1">
+          <figure>
+            <a href="temperature_page.html">
+            <img class="img-responsive" id="img-1" src="../images/lat_temp_scatter.png" width="300" height="300" alt="Temperature vs. Latitude"></a>
+          </figure>
+        </section>
+
+        <section id="viz-2">
+          <figure>
+            <a href="cloudiness_page.html">
+            <img class="img-responsive" id="img-2" src="../images/lat_cloudiness_scatter.png" width="300" height="300" alt="cloudiness vs. Latitude"></a>
+          </figure>
+        </section>
+      <!-- div - col-md-3 end -->  
+      </div>  
+      <div class="col-md-3"
+        <section id="viz-3">
+          <figure>
+            <a href="humidity_page.html">
+            <img class="img-responsive" id="img-3" src="../images/lat_humidity_scatter.png" width="300" height="300" alt="Humidity vs. Latitude"></a>
+          </figure>
+        </section>
+     
+        <section id="viz-4">
+          <figure>
+            <a href="wind_mph_page.html">
+            <img class="img-responsive" id="img-4" src="../images/lat_windmph_scatter.png" width="300" height="300" alt="Wind Speed vs. Latitude"></a>
+          </figure>
+        </section>
+      <!-- div - col-md-3 end -->  
+      </div>
+    <!-- div - row end -->
+    </div>
+  
+    <div class="row">
+            <!-- Columns have 12 areas of width to work with. -->
+      <!-- One third of screen (8/12) -->
+      <div class="col-md-6">
+        <p id="cloud_p"> 
+          I think this is the least informative chart of the group.  I can tell it
+          is cloudy in a lot of cities to some degree, and there are a number of 
+          cities with no clouds.
+        </p>
+      <!-- div - col 6 end -->  
+      </div>
+    <!-- div - row end -->
+    </div>  
+  <!-- div container end -->
+  </div>
+</body>
+
+</html>	
