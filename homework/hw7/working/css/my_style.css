@@ -1,5 +1,4 @@
-/* comparison_style.css */
-
+/* my_style.css */
 
 * {
   -webkit-box-sizing: border-box;
@@ -7,15 +6,14 @@
           box-sizing: border-box;
 }
 
-
 body{
-  background-color: #fbf9f9;
+  background-color: #fbf9f9;  /* lightgray */
   font-family: Times New Roman, Times, Georgia, serif;
 }
 
 .navbar-default{
   font-family: sans-serif, Georgia, Times New Roman, Times, serif;
-  background-color: #ffffff;
+  background-color: #ffffff;  /* white */
 }
 
 #lat-link{
@@ -27,31 +25,22 @@ body{
 }
 
 
-
 h1{
   font-size: 36px;
   font-weight: bold;
   color: #47d2b8;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 
 h2{
   font-size: 28px;
   font-weight: bold;
   color: #47d2b8;
-  margin-top: 5%;
+  margin-top: 10%;
+  padding-top: 0%;
 }
 
-
-.col-md-12{
-  background-color: white;
-  margin: 0;
-  padding: 0;
-}
-
-.col-md-6{
-	background-color: white;
-	margin: 0;
-  padding: 0;
+hr{
+  border-bottom: 5px solid #ffffff;
 }
 

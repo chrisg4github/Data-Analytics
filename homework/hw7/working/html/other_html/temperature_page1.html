@@ -13,6 +13,13 @@
 
   <!-- landing page stylesheet  -->
   <link type="text/css" rel="stylesheet" href="../css/temperature_style.css">
+  
+  <!-- jquery file  -->
+  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+  
+  <!-- bootstrap javascript file -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  
 </head>
 
 <body>
@@ -51,97 +58,89 @@
 
   <!-- Our rows function in containers (grid created). -->
   <div class="container-fluid">
-    <!-- 1st row of columns -->
     <div class="row">
       <!-- Columns have 12 areas of width to work with. -->
-      <!-- (7/12) of screen  -->
-      <div class="col-md-7" id="col-7-top">
-        <h1>Max Temperature</h1>
+      <!-- One half of screen (6/12) -->
+      <div class="col-md-6">
+        <h1 align="center">Max Temperature</h1>
         <hr>
-      <!-- div - col 7 end -->
+      <!-- div - col 6 end -->
       </div>    
-      <!-- (4/12) of screen -->
-      <div class="col-md-4">
+      <!-- One half of screen (6/12) -->
+      <div class="col-md-6">
         <h2 align="center">Visualizations</h2>
         <hr>
-      <!-- div - col 4 end -->
+      <!-- div - col 6 end -->
       </div>
     <!-- div - row end -->  
     </div>
 
-    <!-- 2nd row of columns -->
     <div class="row">
       <!-- Columns have 12 areas of width to work with. -->
-      <!-- (7/12)  of screen -->
-      <div class="col-md-7" id="col-7-top">
+      <!-- One half of screen (6/12) -->
+      <div class="col-md-6">
         <section id="temp_main">
           <figure>
-            <img class="img-responsive" src="../images/lat_temp_scatter.png" width="600" height="600" alt="Temperature vs. Latitude">
+            <img class="img-responsive" src="../images/lat_temp_scatter.png" width="800" height="800" alt="Temperature vs. Latitude">
           </figure>
         </section>
-      <!-- div col 7 end -->  
+      <!-- div col 6 end -->  
       </div>
     
       <!-- Visualizations -->
-      <div class="col-md-2" id="viz-colsA">
+      <div class="col-md-3" id="viz-colsA">
         <section id="viz-1">
           <figure>
             <a href="temperature_page.html">
-            <img id="img-1" src="../images/lat_temp_scatter.png" width="150" height="150" alt="Temperature vs. Latitude"></a>
+            <img class="img-responsive" id="img-1" src="../images/lat_temp_scatter.png" width="300" height="300" alt="Temperature vs. Latitude"></a>
           </figure>
         </section>
 
         <section id="viz-2">
           <figure>
             <a href="cloudiness_page.html">
-            <img id="img-2" src="../images/lat_cloudiness_scatter.png" width="150" height="150" alt="cloudiness vs. Latitude"></a>
+            <img class="img-responsive" id="img-2" src="../images/lat_cloudiness_scatter.png" width="300" height="300" alt="cloudiness vs. Latitude"></a>
           </figure>
         </section>
-        <!-- div - col 2 end -->  
-      </div> 
-       
-      <div class="col-md-2" id="viz-colsB">
+      <!-- div - col-md-3 end -->  
+      </div>  
+      <div class="col-md-3" id="viz-colsB">
         <section id="viz-3">
           <figure>
             <a href="humidity_page.html">
-            <img id="img-3" src="../images/lat_humidity_scatter.png" width="150"      height="150" alt="Humidity vs. Latitude"></a>
+            <img class="img-responsive" id="img-3" src="../images/lat_humidity_scatter.png" width="300" height="300" alt="Humidity vs. Latitude"></a>
           </figure>
         </section>
      
         <section id="viz-4">
           <figure>
             <a href="wind_mph_page.html">
-            <img id="img-4" src="../images/lat_windmph_scatter.png" width="150" height="150" alt="Wind Speed vs. Latitude"></a>
+            <img class="img-responsive" id="img-4" src="../images/lat_windmph_scatter.png" width="300" height="300" alt="Wind Speed vs. Latitude"></a>
           </figure>
         </section>
-      <!-- div - col 2 end -->  
+      <!-- div - col 3 end -->  
       </div>
     <!-- div - row end -->
     </div>
-
-    <!-- 3rd row of columns -->    
+    
     <div class="rows">
       <!-- Columns have 12 areas of width to work with. -->
-      <!-- (7/12) of screen -->
-      <div class="col-md-7" id="col-7-bot">
+      <!-- One half of screen (6/12) -->
+      <div class="col-md-6">
         <p id="temp_p"> 
-          There is a linear association of temperature to geo-coordinates. It is a slightly weak assocation, but there is more of a concentration of cities in the
+          There is a linear association of temperature to geo-coordinate. It is a slightly
+          weak assocation, but there is more of a concentration of cities in the
           the moderate temperature zone.  That would mean that a majority of cities are 
           concentrated in the 60 - 80 degree range with fewer as you move upwards or 
           downwards in temperature.  
         </p>
-        <!-- div - col 7 end --> 
+        <!-- div - col 6 end --> 
       </div>
     <!-- div - row end -->
     </div>         
   <!-- div container end -->
   </div>
 
-  <!-- jquery file  -->
-  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
-  <!-- bootstrap javascript file -->
-  <script type="text/javascript" src="../js/bootstrap.js"></script>
-  
 </body>
 
 </html>	

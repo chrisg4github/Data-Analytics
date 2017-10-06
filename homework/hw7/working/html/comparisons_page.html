@@ -13,13 +13,6 @@
   
   <!-- landing page stylesheet  -->
   <link type="text/css" rel="stylesheet" href="../css/comparisons_style.css">
-  
-  <!-- jquery file  -->
-  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
-  
-  <!-- bootstrap javascript file -->
-  <script type="text/javascript" src="../js/bootstrap.js"></script>
-  
 </head>
 
 <body>
@@ -60,24 +53,31 @@
   <div class="container-fluid">
     <!-- Our columns function in rows. -->
     <div class="rows">
-      <h1>Comparison: Latitude vs. X</h1>
-      <hr>
+      <div class="col-md-12">
+        <h1>Comparison: Latitude vs. X</h1>
+        <hr>
+      </div>
+    </div>
+
+    <div class="rows">
       <!-- Columns have 12 areas of width to work with. -->
       <!-- One half of screen (6/12) -->
       <div class="col-md-6">
         <section id="img-1">
-          <h3> vs. Max Temperature</h3>
+          <h2 align="center"> vs. Max Temperature</h2>
           <figure>
-            <img class="img-responsive" id="temp-img" src="../images/lat_temp_scatter.png" width="500" height="500" alt="Temperature vs. Latitude">
+            <a href="temperature_page.html">
+            <img class="img-responsive" id="temp-img" src="../images/lat_temp_scatter.png" alt="Temperature vs. Latitude"></a>
           </figure>
         </section>
       </div>
         <!-- One half of screen (6/12) -->
       <div class="col-md-6">
         <section id="img-2">
-          <h3> vs. Cloudiness</h3>
+          <h2 align="center"> vs. Cloudiness</h2>
           <figure>
-            <img class="img-responsive" id="cld-img" src="../images/lat_cloudiness_scatter.png" width="500" height="500" alt="Cloudiness vs. Latitude">
+            <a href="cloudiness_page.html">
+            <img class="img-responsive" id="cld-img" src="../images/lat_cloudiness_scatter.png" alt="Cloudiness vs. Latitude"></a>
           </figure>
         </section>
       </div>
@@ -86,18 +86,20 @@
     <div class="rows">
       <div class="col-md-6">
         <section id="img-3">
-          <h3> vs. Humidity</h3>
+          <h2 align="center"> vs. Humidity</h2>
           <figure>
-            <img class="img-responsive" id="humd-img" src="../images/lat_humidity_scatter.png" width="500" height="500" alt="Humidity vs. Latitude">
+            <a href="humidity_page.html">
+            <img class="img-responsive" id="humd-img" src="../images/lat_humidity_scatter.png" alt="Humidity vs. Latitude"></a>
           </figure>
         </section>
        <!-- div - row 1 col-md-6 end --> 
       </div>
       <div class="col-md-6">
         <section id="img-4">
-          <h3> vs. Wind Speed</h3>
+          <h2 align="center"> vs. Wind Speed</h2>
           <figure>
-            <img class="img-responsive" id="wmph-img" src="../images/lat_windmph_scatter.png" width="500" height="500" alt="Wind Speed vs. Latitude">
+            <a href="wind_mph_page.html">
+            <img class="img-responsive" id="wmph-img" src="../images/lat_windmph_scatter.png" alt="Wind Speed vs. Latitude"></a>
           </figure>
         </section>
       <!-- div - row 2 col-md-6 end -->  
@@ -106,6 +108,11 @@
     </div>
   <!-- div container end -->
   </div>
+
+  <!-- jquery file  -->
+  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+  <!-- bootstrap javascript file -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
 
 </body>
 

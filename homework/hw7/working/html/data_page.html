@@ -12,14 +12,7 @@
   <link type="text/css" rel="stylesheet" href="../css/reset.css">
   
   <!-- landing page stylesheet  -->
-  <link type="text/css" rel="stylesheet" href="../css/landing_style.css">
-  
-  <!-- jquery file  -->
-  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
-  
-  <!-- bootstrap javascript file -->
-  <script type="text/javascript" src="../js/bootstrap.js"></script>
-  
+  <link type="text/css" rel="stylesheet" href="../css/data_style.css">
 </head>
 
 <body>
@@ -67,17 +60,21 @@
         <hr>
         <section id="data-main">
           <p> 
-            The assignment required creating our own data, and the most difficult 
-            part was remembering geography lessons from too many years ago.  I 
-            choose a method of dividing the earth into quadrants using the image at
-            this link: http://i37.tinypic.com/345izb4.jpg as an example.  From the 
-            image, I used the x-axis as latitude -180.0 to 180.0(Far West to 
-            Far East), and the y-axis was -90.0 to 90.0.  Finding unique city geo 
-            coordinates proved to be the difficult part, but I know there has got 
-            to be a much better way to go about gathering the cities.  Learning 
-            activities are necessary, but it is good to learn real world knowledge 
-            and experience in the area of data gathering because I am finding that 
-            I spend a large amount of time just gathering data.  
+            This is a study of weather in cities around the globe, the gathering
+            of data, creation of charts, and analysis of the results.  Geography
+            and remembering geography lessons from too many years ago played a 
+            large part in the proper gathering of the data. To get a reasonable 
+            distribution of data points, I choose a method of dividing the 
+            earth into quadrants using the image on the right.  From the image, 
+            I used the x-axis as latitude -180.0 to 180.0(Far West to Far East), 
+            and the y-axis was -90.0 to 90.0.
+            <br>
+            <br>
+            I used a list of 4 tuples which were the ranges -180 to 180, and then
+            passed those and a constant tuple (-90,90) to the two random.uniform functions which generated x and y coordinates.  Next, I passed the list
+            of geo-coordinates to a library called citipy which found the nearest
+            city with a population greater than 500.  Duplicates were deleted and 
+            the process was repeated until at least 500 cities are gathered.
           </p>
         </section>
         <br>
@@ -409,7 +406,11 @@
     </div>
   <!-- div container end -->
   </div>
-
+  
+  <!-- jquery file  -->
+  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+  <!-- bootstrap javascript file -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
 </body>
 
 </html>	

@@ -6,13 +6,23 @@
   <title>Latitude Landing</title>
   
   <!--reset stylesheet -->
-  <link type="text/css" rel="stylesheet" href="../css/reset.css">
+  <!--<link type="text/css" rel="stylesheet" href="../css/reset.css">-->
 
   <!-- bootstrapcdn stylesheet -->
   <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
   
+  <!--reset stylesheet -->
+  <link type="text/css" rel="stylesheet" href="../css/reset.css">
+
   <!-- landing page stylesheet  -->
   <link type="text/css" rel="stylesheet" href="../css/landing_style.css">
+  
+  <!-- jquery file  -->
+  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+  
+  <!-- bootstrap javascript file -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+
 </head>
 
 <body>
@@ -54,34 +64,18 @@
     <!-- Our columns function in rows. -->
     <div class="row">
       <!-- Columns have 12 areas of width to work with. -->
-      <!-- (7/12) of screen  -->
-      <div class="col-md-7" id="col-7-top">
-        <h1>Summary: Latitude vs. X</h1>
-        <hr>
-      <!-- div - col 7 end -->
-      </div>    
-      <!-- (4/12) of screen -->
-      <div class="col-md-4">
-        <h2 align="center">Visualizations</h2>
-        <hr>
-      <!-- div - col 4 end -->
-      </div>
-    <!-- div - row end -->  
-    </div>    
-
-    <div class="row">
-      <!-- Columns have 12 areas of width to work with. -->
       <!-- Two Thirds of screen (8/12) -->
-      <div class="col-md-7" id="col-7-top">
+      <div class="col-md-8">
+        <h1 align="center">Summary: Latitude vs. X</h1>
         <section id="sumry-main">
           <figure>
-            <img id="sumry-img" align="top"src="../images/earth_in_quadrants.png" width="300" height="300" alt="Temperature vs. Latitude">
+            <img class="img-responsive" id="sumry-img" align="top"src="../images/earth_in_quadrants.png" width="200" height="200" alt="Temperature vs. Latitude">
             <p id="sumry-p"> 
             This is a study of weather in cities around the globe, the gathering
             of data, creation of charts, and analysis of the results.  Geography
             and remembering geography lessons from too many years ago played a 
             large part in the proper gathering of the data. To get a reasonable 
-            distribution of data points, I choose a method of dividing the 
+            dsitribution of data points, I choose a method of dividing the 
             earth into quadrants using the image on the right.  From the image, 
             I used the x-axis as latitude -180.0 to 180.0(Far West to Far East), 
             and the y-axis was -90.0 to 90.0.  
@@ -116,39 +110,41 @@
           </p>
           </figure>
         </section>
-      <!-- div - col 7 end -->  
+      <!-- div - col 8 end -->  
       </div>
       
-      <!-- Visualizations -->
-      <div class="col-md-2" id="viz-colsA">
+
+      <div class="col-md-2" id="col-2A">
+        <!-- Visualizations width="200" height="200" -->
+        <h2 align="center">Visualizations</h2>
         <section id="viz-1">
           <figure>
             <a href="temperature_page.html">
-            <img class="img-responsive"  id="img-1" src="../images/lat_temp_scatter.png" alt="Temperature vs. Latitude"></a>
+            <img class="img" id="img-1" src="../images/lat_temp_scatter.png" width="100" height="100" alt="Temperature vs. Latitude"></a>
           </figure>
         </section>
 
         <section id="viz-2">
           <figure>
             <a href="cloudiness_page.html">
-            <img class="img-responsive"  src="../images/lat_cloudiness_scatter.png" alt="cloudiness vs. Latitude"></a>
+            <img class="img" id="img-2" src="../images/lat_cloudiness_scatter.png" width="100" height="100" alt="cloudiness vs. Latitude"></a>
           </figure>
         </section>
-        <!-- div - col 2 end -->  
+      <!-- div - col 3 end -->  
       </div> 
        
-      <div class="col-md-2" id="viz-colsB">
+      <div class="col-md-2" id="col-2B">
         <section id="viz-3">
           <figure>
             <a href="humidity_page.html">
-            <img class="img-responsive" src="../images/lat_humidity_scatter.png" alt="Humidity vs. Latitude"></a>
+            <img class="img" id="img-3" src="../images/lat_humidity_scatter.png" width="100" height="100" alt="Humidity vs. Latitude"></a>
           </figure>
         </section>
      
         <section id="viz-4">
           <figure>
             <a href="wind_mph_page.html">
-            <img class="img-responsive" src="../images/lat_windmph_scatter.png" alt="Wind Speed vs. Latitude"></a>
+            <img class="img" id="img-4" src="../images/lat_windmph_scatter.png" width="100" height="100" alt="Wind Speed vs. Latitude"></a>
           </figure>
         </section>
       <!-- div - col 2 end -->  
@@ -157,11 +153,6 @@
     </div>
   <!-- div container end -->
   </div>
-
-  <!-- jquery file  -->
-  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
-    <!-- bootstrap javascript file -->
-  <script type="text/javascript" src="../js/bootstrap.js"></script>
 
 </body>
 

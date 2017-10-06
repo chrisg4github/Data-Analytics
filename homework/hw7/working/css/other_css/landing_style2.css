@@ -1,0 +1,111 @@
+/* landing_style.css */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+/* Body colors #e7e7e7 #f7f3f3 #f1eded #fbf9f9 shades of lightgray*/
+body{
+  background-color: #fbf9f9;
+}
+
+/* Titles */
+h1{
+  font-size: 36px;
+  font-weight: bold;
+  color: #47d2b8;
+  margin-top: 0%;
+}
+
+h2{
+  font-size: 28px;
+  font-weight: bold;
+  color: #47d2b8;
+  margin-top: 0%;
+}
+
+/* Navigation Bar */
+.navbar-default{
+  font-family: sans-serif, Georgia, Times New Roman, Times, serif;
+  background-color: #ffffff;
+}
+
+#lat-link{
+  font-family: Times New Roman, Times, Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #47d2b8;
+}
+
+
+/* Columns */
+.col-md-6{
+  margin-top: 1%;
+  margin-right: 10px;
+  background-color: white;
+  /*padding: 10px 10px 10px 10px;*/
+  /*border: 0px solid #fbf9f9;*/
+}
+
+#col-3A{
+  margin-top: 1%;
+  background-color: white;
+  /*padding: 10px 10px 10px 10px;*/
+  /*border-right: 0px solid #fbf9f9;*/
+}
+
+#col-3B{
+  margin-top: 1%;
+  background-color: white;
+  /*padding: 10px 10px 10px 10px;*/
+  /*border-right: 0px solid #fbf9f9;*/
+}
+
+
+
+#sumry-img{
+  float: left;
+  margin-left: 1%;
+  margin-right: 15px;
+  padding: 0 0 0 0;
+  
+}
+
+#sumry-p{
+  margin-top: 0%;
+  margin-left: 2%;
+  padding: 0 0 0 0;
+}
+
+/* 1st col - 3 img-1 temperature */
+#img-1{
+  float: right;
+  margin-left: 2%;
+  margin-right: 0%;
+}
+
+/* 1st col - 3 img-2 cloudiness */
+#img-2{
+  float: right;
+  margin-left: 0;
+  margin-right: 2%;
+}
+
+/* 2nd col - 3 img-3 humidity */
+#img-3{
+  float: right;
+  margin-left: 0;
+  margin-right: 2%;
+}
+
+/* 2nd col - 3 img-4 cloudiness */
+#img-4{
+  float: right;
+  margin-left: 2%;
+  margin-right: 0;
+}

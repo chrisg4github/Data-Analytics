@@ -5,21 +5,15 @@
   <meta charset="UTF-8">
   <title>Cloudiness Plot</title>
   
+  <!--reset stylesheet -->
+  <link type="text/css" rel="stylesheet" href="../css/reset.css">
+
   <!-- bootstrapcdn stylesheet -->
   <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
   
-  <!--reset stylesheet -->
-  <link type="text/css" rel="stylesheet" href="../css/reset.css">
-  
   <!-- landing page stylesheet  -->
   <link type="text/css" rel="stylesheet" href="../css/cloudiness_style.css">
-  
-  <!-- jquery file  -->
-  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
-  
-  <!-- bootstrap javascript file -->
-  <script type="text/javascript" src="../js/bootstrap.js"></script>
-  
+    
 </head>
 
 <body>
@@ -59,71 +53,96 @@
   <!-- Our rows function in containers (grid created). -->
   <div class="container-fluid">
     <!-- Our columns function in rows. -->
+  <!-- Our rows function in containers (grid created). -->
+  <div class="container-fluid">
+    <!-- 1st row of columns -->
+    <div class="row">
+      <!-- Columns have 12 areas of width to work with. -->
+      <!-- (7/12) of screen  -->
+      <div class="col-md-7" id="col-7-top">
+        <h1>Cloudiness</h1>
+        <hr>
+      <!-- div - col 7 end -->
+      </div>    
+      <!-- (4/12) of screen -->
+      <div class="col-md-4">
+        <h2 align="center">Visualizations</h2>
+        <hr>
+      <!-- div - col 4 end -->
+      </div>
+    <!-- div - row end -->  
+    </div>
+    
+    <!-- 2nd row of columns -->
     <div class="row">
             <!-- Columns have 12 areas of width to work with. -->
-      <!-- One third of screen (8/12) -->
-      <div class="col-md-6">
-        <h1 align="center">Cloudiness</h1>
+      <!-- (7/12) of screen -->
+      <div class="col-md-7" id="col-7-top">
         <section id="cloud-main">
           <figure>
-            <img class="img-responsive"id="cloud-img" src="../images/lat_cloudiness_scatter.png" width="800" height="800" alt="Cloudiness vs. Latitude">
+            <img class="img-responsive" id="cloud-img" src="../images/lat_cloudiness_scatter.png" width="600" height="600" alt="Cloudiness vs. Latitude">
           </figure>
         </section>
-      <!-- div col 6 end -->  
+      <!-- div col 7 end -->  
       </div>  
    
       <!-- Visualizations -->
-      <h2 align="center">Visualizations</h2>
-      <div class="col-md-3">
+      <div class="col-md-2" id="viz-colsA">
         <section id="viz-1">
           <figure>
             <a href="temperature_page.html">
-            <img class="img-responsive" id="img-1" src="../images/lat_temp_scatter.png" width="300" height="300" alt="Temperature vs. Latitude"></a>
+            <img id="img-1" src="../images/lat_temp_scatter.png" width="150" height="150" alt="Temperature vs. Latitude"></a>
           </figure>
         </section>
 
         <section id="viz-2">
           <figure>
             <a href="cloudiness_page.html">
-            <img class="img-responsive" id="img-2" src="../images/lat_cloudiness_scatter.png" width="300" height="300" alt="cloudiness vs. Latitude"></a>
+            <img id="img-2" src="../images/lat_cloudiness_scatter.png" width="150" height="150" alt="cloudiness vs. Latitude"></a>
           </figure>
         </section>
-      <!-- div - col-md-3 end -->  
-      </div>  
-      <div class="col-md-3"
+        <!-- div - col 2 end -->  
+      </div> 
+       
+      <div class="col-md-2" id="viz-colsB">
         <section id="viz-3">
           <figure>
             <a href="humidity_page.html">
-            <img class="img-responsive" id="img-3" src="../images/lat_humidity_scatter.png" width="300" height="300" alt="Humidity vs. Latitude"></a>
+            <img id="img-3" src="../images/lat_humidity_scatter.png" width="150"      height="150" alt="Humidity vs. Latitude"></a>
           </figure>
         </section>
      
         <section id="viz-4">
           <figure>
             <a href="wind_mph_page.html">
-            <img class="img-responsive" id="img-4" src="../images/lat_windmph_scatter.png" width="300" height="300" alt="Wind Speed vs. Latitude"></a>
+            <img id="img-4" src="../images/lat_windmph_scatter.png" width="150" height="150" alt="Wind Speed vs. Latitude"></a>
           </figure>
         </section>
-      <!-- div - col-md-3 end -->  
+      <!-- div - col 2 end -->  
       </div>
     <!-- div - row end -->
     </div>
-  
+    
+    <!-- 3rd row of columns -->
     <div class="row">
             <!-- Columns have 12 areas of width to work with. -->
-      <!-- One third of screen (8/12) -->
-      <div class="col-md-6">
+      <!-- (7/12) of screen -->
+      <div class="col-md-7" id="col-7-bot">
         <p id="cloud_p"> 
-          I think this is the least informative chart of the group.  I can tell it
-          is cloudy in a lot of cities to some degree, and there are a number of 
-          cities with no clouds.
+          There doesn't seem to be linear association of cloudiness to geo-coordinates, and it is definitely a weak assocation because the data points are spread out all around the plot.  There are a five concentations lines of data but it's not possible to make a conclusion with this amount of data.
         </p>
-      <!-- div - col 6 end -->  
+      <!-- div - col 7 end -->  
       </div>
     <!-- div - row end -->
     </div>  
   <!-- div container end -->
   </div>
+
+  <!-- jquery file  -->
+  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+    <!-- bootstrap javascript file -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+
 </body>
 
 </html>	

@@ -1,9 +1,11 @@
-/* wind_mph_style.css */
+/* temperature_style.css */
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 
 body{
   background-color: #fbf9f9;
@@ -36,56 +38,31 @@ h2{
   font-size: 28px;
   font-weight: bold;
   color: #47d2b8;
-  margin-top: 10%;
-  padding-top: 0%;
-  border-right: 2px solid #ffffff;
+  margin-top: 5%;
 }
 
-hr{
-  border-bottom: 20px solid #ffffff;
-  border-right: 2px solid #ffffff;
-}
+
 
 #viz-colsA{
-  border-top: 25px solid #ffffff;
-  margin-top: 0;
-  margin-left: 20px;
-  margin-right: 0;
-  background-color: white;
-}
-
-#viz-colsB{
-  border-top: 25px solid #ffffff;
-  margin-top: 0;
   margin-left: 0;
   margin-right: 0;
   background-color: white;
 }
 
-#col-7-top{
-  margin-top: 0%;
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: white;
-  padding: 10px 10px 10px 10px;
-  border-right: 2px solid #fbf9f9;
-  border-left: 14px solid #fbf9f9;
-}
-
-#col-7-bot{
-  margin-top: 0%;
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: white;
-  padding: 10px 10px 10px 10px;
-  border-right: 2px solid #fbf9f9;
-  border-left: 14px solid #fbf9f9;
-}
-
-.col-md-4{
-  margin-left: 20px;
+#viz-colsB{
+  margin-left: 0;
   margin-right: 0;
-  margin-bottom: 0%;
-  padding-top: 25px;
   background-color: white;
+}
+
+.col-md-12{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.col-md-6{
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }

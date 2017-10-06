@@ -6,6 +6,24 @@
           box-sizing: border-box;
 }
 
+body{
+  background-color: #fbf9f9;
+  font-family: Times New Roman, Times, Georgia, serif;
+}
+
+.navbar-default{
+  font-family: sans-serif, Georgia, Times New Roman, Times, serif;
+  background-color: #ffffff;
+}
+
+#lat-link{
+  font-family: Times New Roman, Times, Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #47d2b8;
+}
+
 h1{
   font-size: 36px;
   font-weight: bold;
@@ -20,10 +38,6 @@ h2{
   margin-top: 4.75%;
 }
 
-#lat-link{
-  font-family: Times New Roman, Times, Georgia, serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #FFF;
-  background-color: #47d2b8;
+.table-responsive{
+   background-color:white;
 }

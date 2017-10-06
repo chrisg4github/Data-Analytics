@@ -25,59 +25,49 @@ body{
 }
 
 
+
 h1{
   font-size: 36px;
   font-weight: bold;
   color: #47d2b8;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 h2{
   font-size: 28px;
   font-weight: bold;
   color: #47d2b8;
-  margin-top: 10%;
-  padding-top: 0%;
+  margin-top: 5%;
 }
 
-hr{
-  border-bottom: 5px solid #ffffff;
+
+.col-md-7{
+  margin-top: 1%;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  /*border-right: 5px solid #fbf9f9;*/
+  border-left: 20px solid #fbf9f9;
 }
+
 
 #viz-colsA{
-  border-top: 25px solid #ffffff;
-  margin-top: -2px;
-  margin-left: 18px;
+  margin-left: 20px;
   margin-right: 0;
   background-color: white;
+  /*padding: 10px 10px 10px 10px;*/
+  /*border-right: 5px solid #ffffff;*/
+  /*border-left: 20px solid #fbf9f9;*/
 }
 
 #viz-colsB{
-  border-top: 25px solid #ffffff;
-  margin-top: -2px;
   margin-left: 0;
   margin-right: 0;
+  /*margin-right: 10px;*/
   background-color: white;
-  /*border-right: 5px solid #ffffff;*/
-}
-
-#col-7-top{
-  margin-top: 0%;
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: white;
-  padding: 10px 10px 10px 10px;
-  border-right: 2px solid #fbf9f9;
-  border-left: 14px solid #fbf9f9;
-}
-
-.col-md-4{
-  margin-left: 18px;
-  margin-right: 0;
-  margin-bottom: 0%;
-  padding-top: 25px;
-  border-right: 5px solid #ffffff;
-  background-color: white;
+  /*padding: 10px 10px 10px 10px;*/
+  /*border-right: 20px solid #ffffff;*/
+  /*border-left: 10px solid #ffffff;*/
 }
 
 #sumry-img{
@@ -98,23 +88,12 @@ hr{
 #viz-1{
   margin-left: 0%;
   margin-right: 0%;
-  margin-top: 0%;
 }
 
 
 #viz-2{
   margin-left: 0%;
   margin-right: 0%;
-}
-
-#viz-3{
-  margin-left: 0%;
-  margin-right: 0%;
   margin-top: 0%;
-}
-
-
-#viz-4{
-  margin-left: 0%;
-  margin-right: 0%;
+  
 }
