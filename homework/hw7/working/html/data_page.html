@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <title>Data Source</title>
   
-  <!-- bootstrapcdn stylesheet -->
-  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-  
   <!--reset stylesheet -->
   <link type="text/css" rel="stylesheet" href="../css/reset.css">
+
+  <!-- bootstrapcdn stylesheet -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
   
   <!-- landing page stylesheet  -->
   <link type="text/css" rel="stylesheet" href="../css/data_style.css">
@@ -35,9 +35,9 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="temperature_page.html">Max Temperature</a></li>
-              <li><a href="humidity_page.html">Humidity</a></li>
-              <li><a href="cloudiness_page.html">Cloudiness</a></li>
-              <li><a href="wind_mph_page.html">Wind Speed</a></li>
+              <li><a href="humidity_page.html">Cloudiness</a></li>
+              <li><a href="cloudiness_page.html">Humidity</a></li>
+              <li><a href="wind_mph_page.html">Widnd Speed</a></li>
             </ul>
           </li>
           <li><a href="comparisons_page.html">Comparisons</a></li>
@@ -58,24 +58,23 @@
       <div class="col-md-12">
         <h1>World Cities Data</h1>
         <hr>
-        <section id="data-main">
-          <p> 
-            This is a study of weather in cities around the globe, the gathering
-            of data, creation of charts, and analysis of the results.  Geography
-            and remembering geography lessons from too many years ago played a 
-            large part in the proper gathering of the data. To get a reasonable 
-            distribution of data points, I choose a method of dividing the 
-            earth into quadrants using the image on the right.  From the image, 
-            I used the x-axis as latitude -180.0 to 180.0(Far West to Far East), 
-            and the y-axis was -90.0 to 90.0.
+        <section>
+          <figure>
+            <img class="img-responsive" id="data-img" src="../images/earth_in_quadrants.png" width="200" height="200" alt="Earth in Quadrants">
+            <p> 
+              This is a study of weather in cities around the globe, the gathering
+              of data, creation of charts, and analysis of the results.  Geography
+              and remembering geography lessons from too many years ago played a 
+              large part in the proper gathering of the data. To get a reasonable 
+              distribution of data points, I choose the method of dividing the 
+              earth into quadrants using the image on the right.  From the image, 
+              I used the x-axis as latitude -180.0 to 180.0(Far West to Far East), 
+              and the y-axis was -90.0 to 90.0.
             <br>
             <br>
-            I used a list of 4 tuples which were the ranges -180 to 180, and then
-            passed those and a constant tuple (-90,90) to the two random.uniform functions which generated x and y coordinates.  Next, I passed the list
-            of geo-coordinates to a library called citipy which found the nearest
-            city with a population greater than 500.  Duplicates were deleted and 
-            the process was repeated until at least 500 cities are gathered.
-          </p>
+              The data gathering steps were as follows: one, the program uses a list of 4 tuples which were the ranges -180 to 180, and those are passed along with a constant tuple (-90,90) to two random.uniform functions which generated x and y coordinates.  Two, the list of geo-coordinates are passed to a library called citipy which found the nearest city with a population greater than 500.  Three, duplicates city, country records were deleted and the process was repeated until at least 500 cities are gathered.  Four, with the city and country, the program makes requests to the Open Weather Map's API to gather the date, latitude, longitude, max temperature, humidity, cloudiness, and wind speed.  The gathered data is then used to create the plots using matplotlib and seaborn modules.
+            </p>
+          </figure>  
         </section>
         <br>
         <br>

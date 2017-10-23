@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
+  <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -36,8 +36,8 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="temperature_page.html">Max Temperature</a></li>
-              <li><a href="humidity_page.html">Humidity</a></li>
-              <li><a href="cloudiness_page.html">Cloudiness</a></li>
+              <li><a href="humidity_page.html">Cloudiness</a></li>
+              <li><a href="cloudiness_page.html">Humidity</a></li>
               <li><a href="wind_mph_page.html">Wind Speed</a></li>
             </ul>
           </li>
@@ -52,89 +52,83 @@
   
   <!-- Our rows function in containers (grid created). -->
   <div class="container-fluid">
-    <!-- Our columns function in rows. -->
-  <!-- Our rows function in containers (grid created). -->
-  <div class="container-fluid">
     <!-- 1st row of columns -->
     <div class="row">
       <!-- Columns have 12 areas of width to work with. -->
-      <!-- (7/12) of screen  -->
-      <div class="col-md-7" id="col-7-top">
+      <!-- (7/12) of screen -->
+      <div class="col-sm-7" id="col-7">
         <h1>Cloudiness</h1>
         <hr>
-      <!-- div - col 7 end -->
-      </div>    
-      <!-- (4/12) of screen -->
-      <div class="col-md-4">
-        <h2 align="center">Visualizations</h2>
-        <hr>
-      <!-- div - col 4 end -->
-      </div>
-    <!-- div - row end -->  
-    </div>
-    
-    <!-- 2nd row of columns -->
-    <div class="row">
-            <!-- Columns have 12 areas of width to work with. -->
-      <!-- (7/12) of screen -->
-      <div class="col-md-7" id="col-7-top">
-        <section id="cloud-main">
+        <section>
           <figure>
-            <img class="img-responsive" id="cloud-img" src="../images/lat_cloudiness_scatter.png" width="600" height="600" alt="Cloudiness vs. Latitude">
+            <img class="img-responsive" id="cloud-img" src="../images/lat_cloudiness_scatter.png" width="800" height="800" alt="Cloudiness vs. Latitude">
           </figure>
         </section>
+
+        <p> 
+          There doesn't seem to be a linear association of cloudiness to geo-coordinates, 
+          but it is definitely a weak assocation if anything because the data points are  
+          spread out all around the plot.  There are a five concentations lines of data, 
+          and the only pattern I see are 5 flat lines of linear association.  More days  
+          of data spread around the year could be helpful in making a better conclusion.
+        </p>
       <!-- div col 7 end -->  
       </div>  
    
       <!-- Visualizations -->
-      <div class="col-md-2" id="viz-colsA">
-        <section id="viz-1">
-          <figure>
-            <a href="temperature_page.html">
-            <img id="img-1" src="../images/lat_temp_scatter.png" width="150" height="150" alt="Temperature vs. Latitude"></a>
-          </figure>
-        </section>
+      <div class="col-sm-4" id="viz-all">
+        <h2 align="center">Visualizations</h2>
+        <hr>
+        <!-- nested row 12 columns " -->
+        <div class="row">       
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <a href="temperature_page.html">
+                <img class="img-responsive" src="../images/lat_temp_scatter.png" alt="Temperature vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <a href="cloudiness_page.html">
+                <img class="img-responsive" src="../images/lat_cloudiness_scatter.png" alt="cloudiness vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+        <!-- nested row 12 columns -->
+        </div>    
+        
+        <!-- nested row 12 columns -->
+        <div class="row">
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <a href="humidity_page.html">
+                <img class="img-responsive" src="../images/lat_humidity_scatter.png" alt="Humidity vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
 
-        <section id="viz-2">
-          <figure>
-            <a href="cloudiness_page.html">
-            <img id="img-2" src="../images/lat_cloudiness_scatter.png" width="150" height="150" alt="cloudiness vs. Latitude"></a>
-          </figure>
-        </section>
-        <!-- div - col 2 end -->  
-      </div> 
-       
-      <div class="col-md-2" id="viz-colsB">
-        <section id="viz-3">
-          <figure>
-            <a href="humidity_page.html">
-            <img id="img-3" src="../images/lat_humidity_scatter.png" width="150"      height="150" alt="Humidity vs. Latitude"></a>
-          </figure>
-        </section>
-     
-        <section id="viz-4">
-          <figure>
-            <a href="wind_mph_page.html">
-            <img id="img-4" src="../images/lat_windmph_scatter.png" width="150" height="150" alt="Wind Speed vs. Latitude"></a>
-          </figure>
-        </section>
-      <!-- div - col 2 end -->  
+          <div class="col-sm-6">     
+            <section>
+              <figure>
+                <a href="wind_mph_page.html">
+                <img class="img-responsive" src="../images/lat_windmph_scatter.png" alt="Wind Speed vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+        <!-- nested row 12 columns -->
+        </div>  
+      <!-- div - col 4 end -->  
       </div>
     <!-- div - row end -->
     </div>
-    
-    <!-- 3rd row of columns -->
-    <div class="row">
-            <!-- Columns have 12 areas of width to work with. -->
-      <!-- (7/12) of screen -->
-      <div class="col-md-7" id="col-7-bot">
-        <p id="cloud_p"> 
-          There doesn't seem to be linear association of cloudiness to geo-coordinates, and it is definitely a weak assocation because the data points are spread out all around the plot.  There are a five concentations lines of data but it's not possible to make a conclusion with this amount of data.
-        </p>
-      <!-- div - col 7 end -->  
-      </div>
-    <!-- div - row end -->
-    </div>  
   <!-- div container end -->
   </div>
 

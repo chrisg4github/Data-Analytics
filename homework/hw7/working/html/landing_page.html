@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp -->
 <head>
   <meta charset="UTF-8">
   <title>Latitude Landing</title>
@@ -35,8 +35,8 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="temperature_page.html">Max Temperature</a></li>
-              <li><a href="humidity_page.html">Humidity</a></li>
-              <li><a href="cloudiness_page.html">Cloudiness</a></li>
+              <li><a href="humidity_page.html">Cloudiness</a></li>
+              <li><a href="cloudiness_page.html">Humidity</a></li>
               <li><a href="wind_mph_page.html">Wind Speed</a></li>
             </ul>
           </li>
@@ -54,29 +54,14 @@
     <!-- Our columns function in rows. -->
     <div class="row">
       <!-- Columns have 12 areas of width to work with. -->
-      <!-- (7/12) of screen  -->
-      <div class="col-md-7" id="col-7-top">
+      <!-- (7/12) of screen -->
+      <div class="col-md-7" id="col-7">
         <h1>Summary: Latitude vs. X</h1>
-        <hr>
-      <!-- div - col 7 end -->
-      </div>    
-      <!-- (4/12) of screen -->
-      <div class="col-md-4">
-        <h2 align="center">Visualizations</h2>
-        <hr>
-      <!-- div - col 4 end -->
-      </div>
-    <!-- div - row end -->  
-    </div>    
-
-    <div class="row">
-      <!-- Columns have 12 areas of width to work with. -->
-      <!-- Two Thirds of screen (8/12) -->
-      <div class="col-md-7" id="col-7-top">
-        <section id="sumry-main">
+        <hr>        
+        <section>
           <figure>
-            <img id="sumry-img" align="top"src="../images/earth_in_quadrants.png" width="300" height="300" alt="Temperature vs. Latitude">
-            <p id="sumry-p"> 
+            <img class="img-responsive" id="sumry-img" src="../images/earth_in_quadrants.png" width="300" height="300" alt="Earth in Quadrants">
+            <p> 
             This is a study of weather in cities around the globe, the gathering
             of data, creation of charts, and analysis of the results.  Geography
             and remembering geography lessons from too many years ago played a 
@@ -120,38 +105,56 @@
       </div>
       
       <!-- Visualizations -->
-      <div class="col-md-2" id="viz-colsA">
-        <section id="viz-1">
-          <figure>
-            <a href="temperature_page.html">
-            <img class="img-responsive"  id="img-1" src="../images/lat_temp_scatter.png" alt="Temperature vs. Latitude"></a>
-          </figure>
-        </section>
+      <div class="col-sm-4" id="viz-all">
+        <h2 align="center">Visualizations</h2>
+        <hr>
+        <!-- nested row 12 columns " -->
+        <div class="row">       
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <a href="temperature_page.html">
+                <img class="img-responsive" src="../images/lat_temp_scatter.png" alt="Temperature vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <a href="cloudiness_page.html">
+                <img class="img-responsive" src="../images/lat_cloudiness_scatter.png" alt="cloudiness vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+        <!-- nested row 12 columns -->
+        </div>    
+        
+        <!-- nested row 12 columns -->
+        <div class="row">
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <a href="humidity_page.html">
+                <img class="img-responsive" src="../images/lat_humidity_scatter.png" alt="Humidity vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
 
-        <section id="viz-2">
-          <figure>
-            <a href="cloudiness_page.html">
-            <img class="img-responsive"  src="../images/lat_cloudiness_scatter.png" alt="cloudiness vs. Latitude"></a>
-          </figure>
-        </section>
-        <!-- div - col 2 end -->  
-      </div> 
-       
-      <div class="col-md-2" id="viz-colsB">
-        <section id="viz-3">
-          <figure>
-            <a href="humidity_page.html">
-            <img class="img-responsive" src="../images/lat_humidity_scatter.png" alt="Humidity vs. Latitude"></a>
-          </figure>
-        </section>
-     
-        <section id="viz-4">
-          <figure>
-            <a href="wind_mph_page.html">
-            <img class="img-responsive" src="../images/lat_windmph_scatter.png" alt="Wind Speed vs. Latitude"></a>
-          </figure>
-        </section>
-      <!-- div - col 2 end -->  
+          <div class="col-sm-6">     
+            <section>
+              <figure>
+                <a href="wind_mph_page.html">
+                <img class="img-responsive" src="../images/lat_windmph_scatter.png" alt="Wind Speed vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+        <!-- nested row 12 columns -->
+        </div>  
+      <!-- div - col 4 end -->  
       </div>
     <!-- div - row end -->
     </div>

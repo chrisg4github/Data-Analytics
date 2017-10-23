@@ -38,45 +38,24 @@ h2{
   color: #47d2b8;
   margin-top: 10%;
   padding-top: 0%;
-}
-
-hr{
   border-bottom: 5px solid #ffffff;
 }
 
-#viz-colsA{
-  border-top: 25px solid #ffffff;
-  margin-top: -2px;
-  margin-left: 18px;
-  margin-right: 0;
-  background-color: white;
-}
 
-#viz-colsB{
-  border-top: 25px solid #ffffff;
-  margin-top: -2px;
-  margin-left: 0;
+#col-7{
+  margin-top: 0;
+  margin-left: 35px;
   margin-right: 0;
-  background-color: white;
-  /*border-right: 5px solid #ffffff;*/
-}
-
-#col-7-top{
-  margin-top: 0%;
-  margin-right: 20px;
-  margin-left: 20px;
   background-color: white;
   padding: 10px 10px 10px 10px;
-  border-right: 2px solid #fbf9f9;
-  border-left: 14px solid #fbf9f9;
 }
 
-.col-md-4{
-  margin-left: 18px;
+
+#viz-all{
+  margin-top: 0;
+  margin-left: 20px;
   margin-right: 0;
-  margin-bottom: 0%;
-  padding-top: 25px;
-  border-right: 5px solid #ffffff;
+  padding: 10px 10px 10px 10px;
   background-color: white;
 }
 
@@ -88,33 +67,5 @@ hr{
   
 }
 
-#sumry-p{
-  margin-top: 0%;
-  margin-left: 2%;
-  padding: 0 0 0 0;
-}
 
 
-#viz-1{
-  margin-left: 0%;
-  margin-right: 0%;
-  margin-top: 0%;
-}
-
-
-#viz-2{
-  margin-left: 0%;
-  margin-right: 0%;
-}
-
-#viz-3{
-  margin-left: 0%;
-  margin-right: 0%;
-  margin-top: 0%;
-}
-
-
-#viz-4{
-  margin-left: 0%;
-  margin-right: 0%;
-}

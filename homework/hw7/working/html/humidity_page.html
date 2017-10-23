@@ -36,8 +36,8 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="temperature_page.html">Max Temperature</a></li>
-              <li><a href="humidity_page.html">Humidity</a></li>
-              <li><a href="cloudiness_page.html">Cloudiness</a></li>
+              <li><a href="humidity_page.html">Cloudiness</a></li>
+              <li><a href="cloudiness_page.html">Humidity</a></li>
               <li><a href="wind_mph_page.html">Wind Speed</a></li>
             </ul>
           </li>
@@ -56,75 +56,15 @@
     <div class="row">
       <!-- Columns have 12 areas of width to work with. -->
       <!-- (7/12) of screen  -->
-      <div class="col-md-7" id="col-7-top">
+      <div class="col-md-7" id="col-7">
         <h1>Wind Speed</h1>
-        <hr>
-      <!-- div - col 7 end -->
-      </div>    
-      <!-- (4/12) of screen -->
-      <div class="col-md-4">
-        <h2 align="center">Visualizations</h2>
-        <hr>
-      <!-- div - col 4 end -->
-      </div>
-    <!-- div - row end -->  
-    </div>
-
-    <!-- 2nd row of columns -->
-    <div class="row">
-      <!-- Columns have 12 areas of width to work with. -->
-      <!-- (7/12) of screen  -->
-      <div class="col-md-7" id="col-7-top">
+        <hr>        
         <section id="humid-main">
           <figure>
             <img class="img-responsive" id="humid-img" src="../images/lat_humidity_scatter.png" width="800" height="800" alt="Humidity vs. Latitude">
           </figure>
         </section>
-      <!-- div col 7 end -->
-      </div>
-   
-      <!-- Visualizations -->
-      <div class="col-md-2" id="viz-colsA">
-        <section id="viz-1">
-          <figure>
-            <a href="temperature_page.html">
-            <img id="img-1" src="../images/lat_temp_scatter.png" width="150" height="150" alt="Temperature vs. Latitude"></a>
-          </figure>
-        </section>
 
-        <section id="viz-2">
-          <figure>
-            <a href="cloudiness_page.html">
-            <img id="img-2" src="../images/lat_cloudiness_scatter.png" width="150" height="150" alt="cloudiness vs. Latitude"></a>
-          </figure>
-        </section>
-        <!-- div - col 2 end -->  
-      </div> 
-       
-      <div class="col-md-2" id="viz-colsB">
-        <section id="viz-3">
-          <figure>
-            <a href="humidity_page.html">
-            <img id="img-3" src="../images/lat_humidity_scatter.png" width="150"      height="150" alt="Humidity vs. Latitude"></a>
-          </figure>
-        </section>
-     
-        <section id="viz-4">
-          <figure>
-            <a href="wind_mph_page.html">
-            <img id="img-4" src="../images/lat_windmph_scatter.png" width="150" height="150" alt="Wind Speed vs. Latitude"></a>
-          </figure>
-        </section>
-      <!-- div - col 2 end -->  
-      </div>
-    <!-- div - row end -->
-    </div>
-
-    <!-- 3rd row of columns -->
-    <div class="row">
-      <!-- Columns have 12 areas of width to work with. -->
-      <!-- (7/12) of screen -->
-      <div class="col-md-7" id="col-7-bot">
         <p id="humid_p"> 
           The humidity chart reveals something I don't often remember, being
           from California most of my life, but having experienced east coast 
@@ -132,11 +72,64 @@
           tells me that humidity doesn't have to be connected to sticky yucky
           weather.  Humidity doesn't seem to impact the bilding of cities as
           they are spread out relatively well with some concentrations. 
-        </p>
-      <!-- div - col 7 end -->  
+        </p>        
+      <!-- div col 7 end -->
+      </div>
+   
+      <!-- Visualizations -->
+      <div class="col-sm-4" id="viz-all">
+        <h2 align="center">Visualizations</h2>
+        <hr>
+        <!-- nested row 12 columns " -->
+        <div class="row">       
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <a href="temperature_page.html">
+                <img class="img-responsive" src="../images/lat_temp_scatter.png" alt="Temperature vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <a href="cloudiness_page.html">
+                <img class="img-responsive" src="../images/lat_cloudiness_scatter.png" alt="cloudiness vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+        <!-- nested row 12 columns -->
+        </div>    
+        
+        <!-- nested row 12 columns -->
+        <div class="row">
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <a href="humidity_page.html">
+                <img class="img-responsive" src="../images/lat_humidity_scatter.png" alt="Humidity vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+
+          <div class="col-sm-6">     
+            <section>
+              <figure>
+                <a href="wind_mph_page.html">
+                <img class="img-responsive" src="../images/lat_windmph_scatter.png" alt="Wind Speed vs. Latitude"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+        <!-- nested row 12 columns -->
+        </div>  
+      <!-- div - col 4 end -->  
       </div>
     <!-- div - row end -->
-    </div>  
+    </div>
   <!-- div container end -->
   </div>
 

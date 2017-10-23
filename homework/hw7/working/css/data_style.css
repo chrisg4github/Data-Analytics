@@ -41,3 +41,11 @@ h2{
 .table-responsive{
    background-color:white;
 }
+
+#data-img{
+  float: left;
+  margin-left: 0%;
+  margin-right: 15px;
+  padding: 0 0 0 0;
+  
+}
