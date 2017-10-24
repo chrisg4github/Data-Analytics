@@ -54,7 +54,7 @@ def welcome():
 @app.route("/api/v1.0/precipitation")
 def precip():
     """Join station, weather tables and return a dictionary with name, station, date, prcp values"""
-    # Query all weather stations for 2017
+    # Query all weather stations for July 2017
     results = session.query(station.name, weather.station, weather.date, weather.prcp).\
                        join(weather, station.station == weather.station).filter(weather.date.between('2017-01-01','2017-12-31')).\
                       order_by(weather.date, weather.station.asc()).all()
@@ -76,7 +76,7 @@ def precip():
 
 @app.route("/api/v1.0/stations")
 def stations():
-    """Return a list of stations as a dictionary"""
+    """Return all records from station table as a dictionary"""
     # Query stations table
     results = session.query(station.name, station.station, station.latitude,\
     	                    station.longitude, station.elevation).\
@@ -97,7 +97,7 @@ def stations():
 @app.route("/api/v1.0/tobs")
 def temps():
     """Join station, weather tables and return a dictionary with name, station, date, tobs values"""
-    # Query all weather stations for the previous year
+    # Query all weather stations for the previous year (2016)
     results = session.query(station.name, weather.station, weather.date, weather.tobs).\
                        join(weather, station.station == weather.station).filter(weather.date.between('2016-01-01','2016-12-31')).\
                       order_by(weather.date, weather.station.asc()).all()
@@ -114,7 +114,7 @@ def temps():
 
 @app.route("/api/v1.0/<start_date>")
 def calc_temps1(start_date):
-    """return min_tobs, avg_tobs, max_tobs values"""
+    """return min_tobs, avg_tobs, max_tobs values for one day using all available stations"""
     tobs_mam = session.query(func.min(weather.tobs),func.avg(weather.tobs),\
                 func.max(weather.tobs)).filter(weather.date == start_date).all()
     # Convert list of tuples into normal list
@@ -123,7 +123,7 @@ def calc_temps1(start_date):
 
 @app.route("/api/v1.0/<start_date>/<end_date>")
 def calc_temps2(start_date, end_date):
-    """return min_tobs, avg_tobs, max_tobs values"""
+    """return min_tobs, avg_tobs, max_tobs values for a date range using all available stations"""
     tobs_mam = session.query(func.min(weather.tobs),func.avg(weather.tobs),\
                 func.max(weather.tobs)).filter(weather.date.between(start_date, end_date)).all()
     # Convert list of tuples into normal list
