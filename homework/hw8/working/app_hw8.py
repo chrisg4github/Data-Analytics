@@ -46,7 +46,7 @@ def welcome():
         f"/api/v1.0/precipitation<br/>"
         f"/api/v1.0/stations<br/>"
         f"/api/v1.0/tobs<br/>"
-        f"/api/vi.0/yyyy-mm-dd<br/>"
+        f"/api/vi.0/yyyy-mm-dd (on a datez0<br/>"
         f"/api/vi.0/yyyy-mm-dd,yyyy-mm-dd	(between dates)<br/>"
     )
 
@@ -54,7 +54,7 @@ def welcome():
 @app.route("/api/v1.0/precipitation")
 def precip():
     """Join station, weather tables and return a dictionary with name, station, date, prcp values"""
-    # Query all weather stations for July 2017
+    # Query all weather stations for all data available for 2017
     results = session.query(station.name, weather.station, weather.date, weather.prcp).\
                        join(weather, station.station == weather.station).filter(weather.date.between('2017-01-01','2017-12-31')).\
                       order_by(weather.date, weather.station.asc()).all()
@@ -68,10 +68,6 @@ def precip():
         station_precip_dict["prcp"] = i.prcp
         all_stations_precip.append(station_precip_dict)
     return jsonify(all_stations_precip)
-
-    # Convert list of tuples into normal list
-    # all_stations_precip = list(np.ravel(results))
-    # return jsonify(all_stations_precip)
 
 
 @app.route("/api/v1.0/stations")
@@ -112,6 +108,7 @@ def temps():
         all_stations_tobs.append(station_tobs_dict)
     return jsonify(all_stations_tobs)
 
+
 @app.route("/api/v1.0/<start_date>")
 def calc_temps1(start_date):
     """return min_tobs, avg_tobs, max_tobs values for one day using all available stations"""
@@ -121,6 +118,7 @@ def calc_temps1(start_date):
     all_values = list(np.ravel(tobs_mam))
     return jsonify(all_values)   
 
+
 @app.route("/api/v1.0/<start_date>/<end_date>")
 def calc_temps2(start_date, end_date):
     """return min_tobs, avg_tobs, max_tobs values for a date range using all available stations"""
@@ -129,6 +127,7 @@ def calc_temps2(start_date, end_date):
     # Convert list of tuples into normal list
     all_values = list(np.ravel(tobs_mam))
     return jsonify(all_values)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
