@@ -1,3 +1,6 @@
 # Data-Analytics
-This is for homework and other sharing, and we will learn more options in the future for sharing.
-  
+This Repository is for homework in-progress and completed ready-to-turn-in.
+
+- hw7 - Data Visualization with HTML, CSS, Bootstrap, JavaScript.
+- hw8 - Data cleansing, DataFrame.plot(), Flask API.
+

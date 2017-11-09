@@ -1,0 +1,52 @@
+
+.tooltip {
+  position: absolute;
+  width: 135px;
+  height: 60px;
+  padding: 2px;
+  padding-top: 8px;
+  font: 12px serif;
+  color: white;
+  text-align: center;
+  background: #551aaf;
+  border: 0;
+  border-radius: 10px;
+}
+
+.axis-text {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  fill: #551aaf;   
+  text-anchor: middle;
+}
+
+.circleText{
+  font-family: serif;
+  font-size: 12px;
+  stroke: gray;
+}
+
+.active {
+  font-weight: bold;
+  fill: #000;
+  fill: #551aaf;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive {
+  font-weight: lighter;
+  fill: #551aaf;
+  /* Next two lines are for blurry text */
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  /* ---------------------------------- */
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive:hover {
+  fill: #e75480;
+  cursor: pointer;
+}
