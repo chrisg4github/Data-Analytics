@@ -112,8 +112,7 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
       // onmouseout event
       .on("mouseout", function(data, index) {
         toolTip.hide(data);
-      })
-      ;
+      });
 
     
     // Add state abbr to circles
@@ -282,14 +281,19 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
         chart.selectAll(".circleText").each(function() {
           d3.select(this)
             .transition()
-            .delay(400)
+            .duration(1000)
+            .style("opacity", 0)
+            .transition()
+            .delay(250)
             // .ease(d3.easeBounce)
             .attr("x", function(data, index) {
                 return xLinearScale(data[currentAxisLabelX]);
                })
             .style("opacity", 1)
-            .duration(1000);
-          });         
+            .transition()
+            .delay(1500);
+          });     
+   
 
         // Prepare the click or hover text  
         var toolTip = d3.tip()
@@ -347,13 +351,17 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
         chart.selectAll(".circleText").each(function() {
           d3.select(this)
             .transition()
-            .delay(400)
+            .duration(1000)
+            .style("opacity", 0)
+            .transition()
+            .delay(250)
             // .ease(d3.easeBounce)
             .attr("y", function(data, index) {
                 return yLinearScale(data[currentAxisLabelY]);
                })
             .style("opacity", 1)
-            .duration(1000);
+            .transition()
+            .delay(1500);
           });         
           
 
