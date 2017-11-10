@@ -18,26 +18,22 @@ body{
   font-size: 24px;
   font-weight: bold;
   color: #FFF;
-  background-color: #47d2b8;
+  background-color: #ff80ff;  /*#47d2b8*/
 }
 
-#container{
-  width:1024px;
-  margin: 0 auto;
-}
 
-header{
-  background-color: #ffffff; /*#e6e6e6 #333333*/
+/*header{
+  background-color: #ffffff; #e6e6e6 #333333
   margin-top: 0;
-}
+}*/
 
 h1{
   text-align: center;
   color: #333333;  /*#ccffe5 #fafafa*/
   font-size: 28px;
-  background-color: #e6e6e6; 
+  /*background-color: #e6e6e6; */
   margin-top: 0;
-  margin-left: 0;
+  margin-left: 250px;
   margin-right: 0;
   }
 
