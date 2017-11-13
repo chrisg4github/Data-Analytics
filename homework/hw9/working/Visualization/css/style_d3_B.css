@@ -50,3 +50,47 @@
   fill: #e75480;
   cursor: pointer;
 }
+
+/* reset button and state horizontal list */
+#reset {
+  float: left;
+  font-size: 10px;
+  background: white;
+  color: #000000;
+  border: 8px 8px 8px 8px;
+  border-color: black;
+  /*outline:none;*/
+  padding: 4px 4px 4px 4px;
+  letter-spacing: 1px;
+  margin-left: 0;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background: #551aaf;
+  color: #ffffff;
+  
+}
+
+#nav-alt ul {
+  float: right;
+  list-style: none;
+  margin-top: 0;
+  margin-right: 100px;
+}
+
+#nav-alt ul li {
+  display: inline-block;
+  font-family: serif, sans-serif;
+  font-size: 8px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+#nav-alt ul li:hover {
+  background: #551aaf;
+  color: #ffffff;
+}
+  
+

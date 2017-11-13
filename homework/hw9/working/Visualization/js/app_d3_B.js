@@ -77,7 +77,58 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
     Max = d3.max(scatterData3, function(data) {return +data[dataColumn];});
   }
 
+  // reset button listener  resets the elements
+  d3.select('#reset')
+    .on("click", function () {
+      console.log("In reset click event");
+        d3.selectAll('.scatterO')
+          .transition()
+          .duration(1800)
+          .attr("r", "18")
+          .style("fill", "violet")
+          .style("stroke", "black")
+          .style("opacity", .15);
+        d3.selectAll('.circleText')
+          .transition()
+          .delay(1000)
+          .transition()
+          .style("stroke", "gray")
+          .style("opacity", 1)
+          .duration(1800);
+    });
+
+  // navigation  put the list on the page
+  d3.select('#nav-alt').append('ul')
+    .selectAll('li')
+    .data(scatterData3)
+    .enter().append('li')
+    .on('click', function (data, index) {
+        highlightLine(data, index);
+      })
+    .text(function(data, index) { return data.Locationabbr; });
+
+
+  // highlight line and fade other lines
+  function highlightLine(data, index) {
+    console.log("index is ", index);
+    d3.selectAll('.scatterO')
+      .transition()
+      .style('opacity', 0.05)
+      .attr("r", "18")
+      .duration(1000);
+    d3.selectAll('.circleText')
+      .transition()
+      .style('opacity', 0.05)
+      .duration(1000);
+    d3.selectAll('.sel-' + index)
+      .transition()
+      .style('opacity', 1)
+      .style("stroke", "gray")
+      .attr("r", "50")
+      .duration(1800);
+    } 
   
+
   // This needs to change as a part of changing the new active axis 
   var toolTip = d3.tip()
     .attr("class", "tooltip")
@@ -104,15 +155,11 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
       .style("fill", "violet")
       .style("stroke", "black")
       .style("opacity", .15)
-      .attr("class","scatterO")
+      .attr("class", function(data, index){return "scatterO sel-" + index}) 
       // onmouseover event
-      .on("click", function(data) {
-        toolTip.show(data);
-      })
+      .on("click", function(data){toolTip.show(data);})
       // onmouseout event
-      .on("mouseout", function(data, index) {
-        toolTip.hide(data);
-      });
+      .on("mouseout", function(data){toolTip.hide(data);});
 
     
     // Add state abbr to circles
@@ -127,7 +174,7 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
         return yLinearScale(data[currentAxisLabelY] + -0.6);
       })
       .attr("text-anchor", "middle")
-      .attr("class", "circleText")     
+      .attr("class", function(data, index){return "circleText sel-" + index})     
       .text(function(data, index){return data.Locationabbr});
 
   // Place the x-y axes lines
@@ -252,7 +299,7 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
           .transition()
           // .ease(d3.easeElastic)
           .call(bottomAxis)
-          .duration(1800);
+          .duration(2000);
 
 
         // Select all circles to create a transition effect
@@ -264,7 +311,9 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
             .attr("cx", function(data,index) {
               return xLinearScale(+data[currentAxisLabelX]);
             })
-            .duration(1800);
+            .attr("r", "18")
+            .style("opacity", .15)
+            .duration(2000);
         });
 
         // Make the current circle text fade out
@@ -291,7 +340,7 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
                })
             .style("opacity", 1)
             .transition()
-            .delay(1500);
+            .duration(3000);
           });     
    
 
@@ -333,7 +382,9 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
             .attr("cy", function(data,index) {
               return yLinearScale(+data[currentAxisLabelY]);
             })
-            .duration(1800);
+            .attr("r", "18")
+            .style("opacity", .15)
+            .duration(2000);
         });
 
         // fade out the previous text
@@ -361,7 +412,7 @@ d3.csv("scatterData3.csv", function(err, scatterData3) {
                })
             .style("opacity", 1)
             .transition()
-            .delay(1500);
+            .duration(3000);
           });         
           
 
